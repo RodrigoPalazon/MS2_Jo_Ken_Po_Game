@@ -1,5 +1,3 @@
-// alert('Halo Alle maal!');
-
 $(document).ready(function() {
     let powers = ['rock', 'paper', 'scissors'];
     let random = Math.floor(Math.random()*3);
@@ -25,25 +23,28 @@ $(document).ready(function() {
     });
 
     function compare(){
+        let messageDiv = $("#battleResult");
+        let message = ["<b>TIED BATTLE</b>", "<b>HUMAN WON</b>", "<b>ROBOT WON</b>"]
+
         if(pc === player){
-            console.log('TIED BATTLE');
+            messageDiv.html(message[0]);
         }else if(pc === 'rock'){
                 if(player === 'paper'){
-                    console.log('Human WON');
+                    messageDiv.html(message[1]);
                 }else{
-                    console.log('Robot WON');
+                    messageDiv.html(message[2]);
                 }
         }else if(pc === 'paper'){
                 if(player === 'scissors'){
-                    console.log('Human WON');
+                    messageDiv.html(message[1]);
                 }else{
-                    console.log('Robot WON');
+                    messageDiv.html(message[2]);
                 }
         }else if(pc === 'scissors'){
             if(player === 'rock'){
-            console.log('Human WON');
+                messageDiv.html(message[1]);
             }else{
-            console.log('Robot WON');
+                messageDiv.html(message[2]);
             }
         }
     }
