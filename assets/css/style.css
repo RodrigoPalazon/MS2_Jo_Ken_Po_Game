@@ -10,6 +10,10 @@ body{
     height: 15rem;
 }
 
-#battleFied button{
-
+.jokenpoMessage {
+    display: none;
 }
+
+/* #item1, #item2, #item3{
+    display: none;
+} */
