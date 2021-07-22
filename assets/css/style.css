@@ -1,19 +1,33 @@
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     background-color: rgb(243, 201, 201);
 }
 
-.container{
-    width: 70%;
+
+/* .... CONTAINER ... */
+#battleFied{
+    width: 80%;
     height: 15rem;
+    /* padding: 10px; */
 }
 
 .jokenpoMessage {
     display: none;
 }
 
-/* #item1, #item2, #item3{
-    display: none;
-} */
+/* ........ BUTTONS ........ */
+
+.buttonsGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/*.... INCREASE POINT  .....*/
+
+.points{
+    display: flex;
+    justify-content: space-between;
+}
