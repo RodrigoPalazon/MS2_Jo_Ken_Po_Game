@@ -19,25 +19,34 @@
     <div id='battleFied' class="container bg-light mt-3">
 
         <div class="points row">
-            <div class="col-6-xl">
+            <div class="col-6-lg">
+                <p>HUMAN:</p>
                 <p>
-                    HUMAN:
-                    <span id="humanPoints">0</span>
+                    <span id="humanPoints">
+                        0
+                    </span>
+                    <span>/</span>
+                    <span class='difficultyPoints'></span>
                 </p>
+                
             </div>
             <div class="col-6-lg">
+                <p>ROBOT:</p>
                 <p>
-                    ROBOT:
-                    <span id="robotPoints">0</span>
+                    <span id="robotPoints">
+                        0 
+                    </span>
+                    <span>/</span>
+                <span class='difficultyPoints'></span>
                 </p>
             </div>
           </div>
 
           <div class="row ">
               <div class="col-lg-8 btn-group btn-group-lg">
-                  <button type="button" class="btn btn-secondary">Easy</button>
-                  <button type="button" class="btn btn-secondary">Medium</button>
-                  <button type="button" class="btn btn-secondary">Hard</button>
+                  <button id='easyLevel' type="button" class="btn btn-secondary">Easy</button>
+                  <button id='mediumLevel' type="button" class="btn btn-secondary">Medium</button>
+                  <button id='hardLevel' type="button" class="btn btn-secondary">Hard</button>
               </div>
               <div class="col-lg-4">
                   <button type="button" class="btn btn-secondary">Rules</button>
@@ -45,9 +54,9 @@
           </div>
 
         <div class="buttonsGroup">
-            <button type="button" id="rock" class="btn btn-outline-danger">rock</button>
-            <button type="button" id="paper" class="btn btn-outline-danger">paper</button>
-            <button type="button" id="scissors" class="btn btn-outline-danger">scissors</button>
+            <button type="button" id="rock" class="power btn btn-outline-danger">rock</button>
+            <button type="button" id="paper" class="power btn btn-outline-danger">paper</button>
+            <button type="button" id="scissors" class="power btn btn-outline-danger">scissors</button>
         </div>
         <div id="jokenpo">
             <span id='item1' class='jokenpoMessage'>JO</span>    

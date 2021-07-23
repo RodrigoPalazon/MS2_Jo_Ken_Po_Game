@@ -16,8 +16,10 @@ body{
 }
 
 #battleFied{
-    width: 80%;
-    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    /* height: 15rem; */
     /* padding: 10px; */
 }
 

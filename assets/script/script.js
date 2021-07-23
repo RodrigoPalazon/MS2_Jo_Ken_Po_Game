@@ -9,36 +9,42 @@ $(document).ready(function() {
     let options = ['#rock', '#paper', '#scissors'];
     let result;
         
-        $('#rock').click(function(){
-            player = 'rock';
-            play();  
-            // player = '';       
-        });
+    
 
-        $('#paper').click(function(){
-            player = 'paper';
-            play();
-        });
+    //Rock,Paper, Scissors
+    $('.power').click(function(btn_id){
+        btn_id = this.id;
+        player = btn_id;
+        console.log("The ID choose is "+ player);
+        play();
+    });
+
+        // $('#rock').click(function(){
+        //     player = 'rock';
+        //     play();  
+        //     // player = '';       
+        // });
+
+        // $('#paper').click(function(){
+        //     player = 'paper';
+        //     play();
+        // });
         
-        $('#scissors').click(function(){
-            player = 'scissors';
-            play();
-        });
+        // $('#scissors').click(function(){
+        //     player = 'scissors';
+        //     play();
+        // });
 
         function play(){
             displayJokenpoMessage();
             setTimeout(()=>{
                 increasePoint(compare(pc,player));
-            }, 500);
-            setTimeout(()=>{
                 player;
                 pc = powers[Math.floor(Math.random()*3)];
                 console.log(pc);
-            }, 600);
-            
+            }, 500);
         }
 
-    
 
     function compare(pc,player){
         let messageDiv = $("#battleResult");
@@ -115,14 +121,35 @@ $(document).ready(function() {
             if(point === message[1]){
                 humanPoints2++;
                 let print = $("#humanPoints").text(humanPoints2);
+                
+                if(humanPoints2 === parseInt($('.difficultyPoints').text()[0])){
+                    console.log('END OF THE GAME, Human won!')
+                }
             }else if(point === message[2]){
                 robotPoints2++;
                 let print = $("#robotPoints").text(robotPoints2);
+
+                if(robotPoints2 === parseInt($('.difficultyPoints').text()[0])){
+                    console.log('END OF THE GAME, Robot won!')
+                }
             }else{
-                // console.log("no points");
+                console.log("no points");
             }
         // }, 3500);
-    
     }
+
+    // Difficulty buttons 
+
+    $('#easyLevel').click(function(){
+        $('.difficultyPoints').text('3');
+    });
+    $('#mediumLevel').click(function(){
+        $('.difficultyPoints').text('5');
+    });
+    $('#hardLevel').click(function(){
+        $('.difficultyPoints').text('9');
+    });
+    
+
 });
 
