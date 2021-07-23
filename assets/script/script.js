@@ -1,17 +1,18 @@
 $(document).ready(function() {
 //...... PC random choice; 
-    let powers = ['rock', 'paper', 'scissors'];
-    let random = Math.floor(Math.random()*3);
-    let pc = powers[random];
-    console.log(pc);
-    
+        let powers = ['rock', 'paper', 'scissors'];
+        // generate a random index 
+        let pc = powers[Math.floor(Math.random()*3)];
+        console.log(pc);
+
     let player;
     let options = ['#rock', '#paper', '#scissors'];
     let result;
         
         $('#rock').click(function(){
             player = 'rock';
-            play();            
+            play();  
+            // player = '';       
         });
 
         $('#paper').click(function(){
@@ -29,48 +30,67 @@ $(document).ready(function() {
             setTimeout(()=>{
                 increasePoint(compare(pc,player));
             }, 500);
+            setTimeout(()=>{
+                player;
+                pc = powers[Math.floor(Math.random()*3)];
+                console.log(pc);
+            }, 600);
+            
         }
 
-  
+    
+
     function compare(pc,player){
         let messageDiv = $("#battleResult");
         let message = ["TIED BATTLE", "HUMAN WON", "ROBOT WON"];
        
+            function timerMessage(){
+                setTimeout(() => {
+                    messageDiv.text('');
+                }, 1500);
+            }
         // let player;
         // let pc;
         
         //    setTimeout(()=>{
                 if(pc === player){
                     messageDiv.html(message[0]);
-                    
+                    timerMessage();
+                    return message[0];
                 }else if(pc === 'rock'){
                         if(player === 'paper'){
                             messageDiv.text(message[1]);
-                            // humanPoints += 1;
+                            timerMessage();
                             return message[1];
                         }else{
                             messageDiv.text(message[2]);
+                            timerMessage();
                             return message[2];
                         }
                 }else if(pc === 'paper'){
                         if(player === 'scissors'){
                             messageDiv.text(message[1]);
+                            timerMessage();
                             return message[1];
                         }else{
                             messageDiv.text(message[2]);
+                            timerMessage();
                             return message[2];
                         }
                 }else if(pc === 'scissors'){
                     if(player === 'rock'){
                         messageDiv.text(message[1]);
+                        timerMessage();
                         return message[1];
                     }else{
                         messageDiv.text(message[2]);
+                        timerMessage();
                         return message[2];
                     }
                 }
             // increasePoint();
             // }, 1500);
+           
         }
         
 
@@ -79,6 +99,9 @@ $(document).ready(function() {
         // for (syllable of syllables) {
             // setTimeout(function(){ 
                 $(".jokenpoMessage").css({"display": "inline-flex"}); 
+                setTimeout(function(){
+                    $(".jokenpoMessage").css({"display": "none"}); 
+                },2000); 
             // }, 500);
         // }
     }
@@ -96,9 +119,10 @@ $(document).ready(function() {
                 robotPoints2++;
                 let print = $("#robotPoints").text(robotPoints2);
             }else{
-                console.log("no points");
+                // console.log("no points");
             }
         // }, 3500);
+    
     }
 });
 
