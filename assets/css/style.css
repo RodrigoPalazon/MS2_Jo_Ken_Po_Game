@@ -1,12 +1,20 @@
 body{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     background-color: rgb(243, 201, 201);
 }
 
 
 /* .... CONTAINER ... */
+.container-fluid{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 1, 105);
+    color: white;
+}
+
 #battleFied{
     width: 80%;
     height: 15rem;
