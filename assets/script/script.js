@@ -10,16 +10,40 @@ $(document).ready(function() {
     let result;
         
     
+    let imagesPath = [ 'assets/images/rocks/rock_3.jpg', 
+                       'assets/images/papers/paper_4.jpg', 
+                       'assets/images/scissors/scissor_5.png'
+                    ];
 
     //Rock,Paper, Scissors
-    $('.power').click(function(btn_id){
+    $('.power').click(function getId(btn_id){
         btn_id = this.id;
         player = btn_id;
-        console.log("The ID choose is "+ player);
+        console.log("The ID chosen is "+ player);
+
+        let humanImg = $('#humanPowerImage');
+        let robotImg = $('#robotPowerImage');
+        
+        if(btn_id === 'rock'){
+            humanImg.attr('src', imagesPath[0]);
+        }else if(btn_id === 'paper'){
+            humanImg.attr('src', imagesPath[1]);
+        }else{
+            humanImg.attr('src', imagesPath[2]);
+        }
+
+        if(pc === 'rock'){
+            robotImg.attr('src', imagesPath[0]);
+        }else if(pc === 'paper'){
+            robotImg.attr('src', imagesPath[1]);
+        }else{
+            robotImg.attr('src', imagesPath[2]);
+        }
         play();
+        // return btn_id;
     });
 
-        // $('#rock').click(function(){
+    // $('#rock').click(function(){
         //     player = 'rock';
         //     play();  
         //     // player = '';       

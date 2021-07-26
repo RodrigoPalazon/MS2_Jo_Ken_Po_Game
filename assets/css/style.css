@@ -23,8 +23,20 @@ body{
     /* padding: 10px; */
 }
 
-.jokenpoMessage {
+.jokenpoMessage{
     display: none;
+}
+
+.row.powerImageContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* #humanPowerImage{
+    background-color: green;
+} */
+#humanPowerImage, #robotPowerImage{
+    width: 40%;
 }
 
 /* ........ BUTTONS ........ */
