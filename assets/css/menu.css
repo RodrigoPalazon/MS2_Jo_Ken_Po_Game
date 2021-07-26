@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(243, 201, 201);
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+.logo{
+    width: 90%;
+    height: 10em;
+    background-color:  rgb(21, 1, 105);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn{
+    width:50%;
+}
