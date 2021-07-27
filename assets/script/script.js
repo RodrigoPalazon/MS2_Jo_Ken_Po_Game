@@ -1,4 +1,26 @@
 $(document).ready(function() {
+
+// menu.html
+let difficultyBtn = '#menuPageDifficulty';
+let levels = ['EASY', 'MEDIUM', 'HARD'];
+
+// Switch the button's text  
+let i = 0;
+let j= i;
+j++;
+$(difficultyBtn).click(function(){
+    if(j == levels.length){
+        j=i;
+        $(difficultyBtn).text(levels[j]);
+        j++;
+        console.log(j);
+    }else{
+        console.log(j);
+        $(difficultyBtn).text(levels[j]);
+        j++;
+    }
+});
+  
 //...... PC random choice; 
         let powers = ['rock', 'paper', 'scissors'];
         // generate a random index 
