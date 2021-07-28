@@ -47,6 +47,10 @@ body{
     justify-content: flex-start;
 }
 
+.clicked{
+    color:red;
+}
+
 /*.... INCREASE POINT  .....*/
 
 .points{

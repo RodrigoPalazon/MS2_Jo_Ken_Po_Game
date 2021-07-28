@@ -8,18 +8,22 @@ let levels = ['EASY', 'MEDIUM', 'HARD'];
 let i = 0;
 let j= i;
 j++;
-$(difficultyBtn).click(function(){
+let buttonLevel = $(difficultyBtn).click(function(){
     if(j == levels.length){
         j=i;
         $(difficultyBtn).text(levels[j]);
         j++;
-        console.log(j);
+        // console.log(levels[j]);
+        return levels[j];
     }else{
-        console.log(j);
+        // console.log(j);
         $(difficultyBtn).text(levels[j]);
         j++;
+        return levels[j];
     }
 });
+
+
   
 //...... PC random choice; 
         let powers = ['rock', 'paper', 'scissors'];
@@ -65,6 +69,9 @@ $(difficultyBtn).click(function(){
         // return btn_id;
     });
 
+    if(buttonLevel === 'EASY'){
+        $('#easyLevel').click();
+    }
     // $('#rock').click(function(){
         //     player = 'rock';
         //     play();  
@@ -188,13 +195,25 @@ $(difficultyBtn).click(function(){
 
     $('#easyLevel').click(function(){
         $('.difficultyPoints').text('3');
+        $('#mediumLevel').removeClass('btn-success');
+        $('#hardLevel').removeClass('btn-success');
+        $(this).addClass('btn-success');
     });
+    $('#easyLevel').click();
+
     $('#mediumLevel').click(function(){
         $('.difficultyPoints').text('5');
+        $('#easyLevel').removeClass('btn-success');
+        $('#hardLevel').removeClass('btn-success');
+        $(this).addClass('btn-success');
     });
     $('#hardLevel').click(function(){
         $('.difficultyPoints').text('9');
+        $('#easyLevel').removeClass('btn-success');
+        $('#mediumLevel').removeClass('btn-success');
+        $(this).addClass('btn-success');
     });
+    
     
 
 });
