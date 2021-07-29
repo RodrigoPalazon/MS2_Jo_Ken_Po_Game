@@ -21,6 +21,17 @@ body{
     width: 85%;
     /* height: 15rem; */
     /* padding: 10px; */
+    /* z-index: 1; */
+}
+
+#trasparentDiv{
+    display:none;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(106, 80, 209, 0.8);
+    z-index: 1;
 }
 
 .jokenpoMessage{
@@ -32,9 +43,31 @@ body{
     justify-content: space-around;
 }
 
-/* #humanPowerImage{
-    background-color: green;
-} */
+#trasparentDiv #winnerMessage{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#containerRules{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(148, 130, 223);
+    color: rgb(12, 12, 12);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#containerRules .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 #humanPowerImage, #robotPowerImage{
     width: 40%;
 }

@@ -16,58 +16,70 @@
         <h1>JO-KEN-PO Battle</h1>
     </header>
 
+    <div id="trasparentDiv" class="container-fluid">
+        <div class="container-fluid">
+            <h3 id="winnerMessage"></h3>
+        </div>
+        <a href="index.html"><button class="btn btn-success">PLAY AGAIN</button></a>
+        <button class="btn btn-danger">RULES</button>
+        <button class="btn btn-danger">QUIT</button>
+    </div>
     <div id='battleFied' class="container bg-light mt-3">
-
-        <div class="points row">
-            <div class="col-6-lg">
-                <p>HUMAN:</p>
-                <p>
-                    <span id="humanPoints">
-                        0
-                    </span>
-                    <span>/</span>
+            <div class="points row">
+                <div class="col-6-lg">
+                    <p>HUMAN:</p>
+                    <p>
+                        <span id="humanPoints" class="pointsMade">
+                            0
+                        </span>
+                        <span>/</span>
+                        <span class='difficultyPoints'></span>
+                    </p>
+                    
+                </div>
+                <div class="col-6-lg">
+                    <p>ROBOT:</p>
+                    <p>
+                        <span id="robotPoints" class="pointsMade">
+                            0 
+                        </span>
+                        <span>/</span>
                     <span class='difficultyPoints'></span>
-                </p>
-                
+                    </p>
+                </div>
             </div>
-            <div class="col-6-lg">
-                <p>ROBOT:</p>
-                <p>
-                    <span id="robotPoints">
-                        0 
-                    </span>
-                    <span>/</span>
-                <span class='difficultyPoints'></span>
-                </p>
+
+            <div class="row ">
+                <div class="col-lg-8 btn-group btn-group-lg">
+                    <button id='easyLevel' type="button" class="btn btn-success">Easy</button>
+                    <button id='mediumLevel' type="button" class="btn btn-success">Medium</button>
+                    <button id='hardLevel' type="button" class="btn btn-success">Hard</button>
+                </div>
+                <div class="col-lg-4">
+                    <a href="rules.html">
+                        <button type="button" class="btn btn-secondary">
+                            Rules
+                        </button>
+                    </a>
+                </div>
             </div>
-          </div>
 
-          <div class="row ">
-              <div class="col-lg-8 btn-group btn-group-lg">
-                  <button id='easyLevel' type="button" class="btn btn-success">Easy</button>
-                  <button id='mediumLevel' type="button" class="btn btn-success">Medium</button>
-                  <button id='hardLevel' type="button" class="btn btn-success">Hard</button>
-              </div>
-              <div class="col-lg-4">
-                  <button type="button" class="btn btn-secondary">Rules</button>
-              </div>
-          </div>
-
-        <div class="buttonsGroup">
-            <button type="button" id="rock" class="power btn btn-outline-danger">rock</button>
-            <button type="button" id="paper" class="power btn btn-outline-danger">paper</button>
-            <button type="button" id="scissors" class="power btn btn-outline-danger">scissors</button>
-        </div>
-        <div id="jokenpo">
-            <span id='item1' class='jokenpoMessage'>JO</span>    
-            <span id='item2' class='jokenpoMessage'>-KEN</span>  
-            <span id='item3' class='jokenpoMessage'>-PO</span>  
-        </div>
-        <div class="row powerImageContainer">
-            <img id="humanPowerImage" src="" alt="">
+            <div class="buttonsGroup">
+                <button type="button" id="rock" class="power btn btn-outline-danger">rock</button>
+                <button type="button" id="paper" class="power btn btn-outline-danger">paper</button>
+                <button type="button" id="scissors" class="power btn btn-outline-danger">scissors</button>
+            </div>
+            <div id="jokenpo">
+                <span id='item1' class='jokenpoMessage'>JO</span>    
+                <span id='item2' class='jokenpoMessage'>-KEN</span>  
+                <span id='item3' class='jokenpoMessage'>-PO</span>  
+            </div>
+            <div class="row powerImageContainer">
+                <img id="humanPowerImage" src="" alt="">
+            
+                <img id="robotPowerImage" src="" alt="">
+            </div>
         
-            <img id="robotPowerImage" src="" alt="">
-        </div>
     </div>
 
     

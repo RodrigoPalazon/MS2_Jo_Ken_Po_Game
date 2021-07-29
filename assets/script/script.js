@@ -176,7 +176,9 @@ let buttonLevel = $(difficultyBtn).click(function(){
                 let print = $("#humanPoints").text(humanPoints2);
                 
                 if(humanPoints2 === parseInt($('.difficultyPoints').text()[0])){
-                    console.log('END OF THE GAME, Human won!')
+                    console.log('END OF THE GAME, Human won!');
+                    $('#trasparentDiv').css({"display": "block"});
+                    $('#winnerMessage').text('HUMAN WON');
                 }
             }else if(point === message[2]){
                 robotPoints2++;
@@ -184,6 +186,8 @@ let buttonLevel = $(difficultyBtn).click(function(){
 
                 if(robotPoints2 === parseInt($('.difficultyPoints').text()[0])){
                     console.log('END OF THE GAME, Robot won!')
+                    $('#trasparentDiv').css({"display": "block"});
+                    $('#winnerMessage').text('ROBOT WON');
                 }
             }else{
                 console.log("no points");
