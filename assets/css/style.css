@@ -7,6 +7,11 @@ body{
 
 
 /* .... CONTAINER ... */
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
 .container-fluid{
     display:flex;
@@ -33,10 +38,6 @@ body{
     top: 0px;
     background-color: rgba(106, 80, 209, 0.8);
     z-index: 1;
-}
-
-.jokenpoMessage{
-    display: none;
 }
 
 .row.powerImageContainer{
@@ -73,6 +74,31 @@ body{
     width: 40%;
 }
 
+.imagesBattleContainer{
+    display:flex;
+    justify-content: space-between;
+}
+
+#jokenpo{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    left: 9%;
+    top: 52%;
+    width: 84.5%;
+    background-color:rgb(69, 11, 146);
+    color: white;
+}
+
+.transparentInternalDiv{
+    /* width:30px; */
+    height:30vh;
+    /* background-color: red; */
+    /* border: green 2px solid; */
+    display: flex;
+    justify-content: center;
+}
+
 /* ........ BUTTONS ........ */
 
 .buttonsGroup{
@@ -101,4 +127,14 @@ header > a{
 header > a:hover{
     text-decoration: none;
     color: white;
+}
+
+/* ..... Images ....*/
+#versusImg{
+    width:100%;
+}
+
+img .col-3{
+    /* height: 2.9em; */
+    max-height: .5em;
 }

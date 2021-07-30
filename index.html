@@ -18,75 +18,86 @@
         </a>
     </header>
 
-    <div id="trasparentDiv" class="container-fluid">
-        <div class="container-fluid">
-            <h3 id="winnerMessage"></h3>
+    <main>
+        <div id="trasparentDiv" class="container-fluid">
+            <div class="container-fluid">
+                <h3 id="winnerMessage"></h3>
+            </div>
+            <a href="index.html"><button class="btn btn-success">PLAY AGAIN</button></a>
+            <button class="btn btn-danger">RULES</button>
+            <button class="btn btn-danger">QUIT</button>
         </div>
-        <a href="index.html"><button class="btn btn-success">PLAY AGAIN</button></a>
-        <button class="btn btn-danger">RULES</button>
-        <button class="btn btn-danger">QUIT</button>
-    </div>
-    
-    <img class="col-2" src="assets/images/characters/human_3.jpg" alt="">
-    <img class="col-2" src="assets/images/characters/robot_3.png" alt="">
-    <div id='battleFied' class="container col-8 bg-light mt-3">
-            <div class="points row">
-                <div class="col-6-lg">
-                    <p>HUMAN:</p>
-                    <p>
-                        <span id="humanPoints" class="pointsMade">
-                            0
-                        </span>
-                        <span>/</span>
-                        <span class='difficultyPoints'></span>
-                    </p>
-                    
-                </div>
-                <div class="col-6-lg">
-                    <p>ROBOT:</p>
-                    <p>
-                        <span id="robotPoints" class="pointsMade">
-                            0 
-                        </span>
-                        <span>/</span>
-                    <span class='difficultyPoints'></span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="row ">
-                <div class="col-lg-8 btn-group btn-group-lg">
-                    <button id='easyLevel' type="button" class="btn btn-success">Easy</button>
-                    <button id='mediumLevel' type="button" class="btn btn-success">Medium</button>
-                    <button id='hardLevel' type="button" class="btn btn-success">Hard</button>
-                </div>
-                <div class="col-lg-4">
-                    <a href="rules.html">
-                        <button type="button" class="btn btn-secondary">
-                            Rules
-                        </button>
-                    </a>
-                </div>
-            </div>
-
-            <div class="buttonsGroup">
-                <button type="button" id="rock" class="power btn btn-outline-danger">rock</button>
-                <button type="button" id="paper" class="power btn btn-outline-danger">paper</button>
-                <button type="button" id="scissors" class="power btn btn-outline-danger">scissors</button>
-            </div>
-            <div id="jokenpo">
-                <span id='item1' class='jokenpoMessage'>JO</span>    
-                <span id='item2' class='jokenpoMessage'>-KEN</span>  
-                <span id='item3' class='jokenpoMessage'>-PO</span>  
-            </div>
-            <div class="row powerImageContainer">
-                <img id="humanPowerImage" src="" alt="">
-            
-                <img id="robotPowerImage" src="" alt="">
-            </div>
         
-    </div>
+        <img class="col-3" src="assets/images/characters/human_3.jpg" alt="">
+        
+        <div id='battleFied' class="container col-6 bg-light mt-3">
+                <div class="points row">
+                    <div class="col-6-lg">
+                        <p>HUMAN:</p>
+                        <p>
+                            <span id="humanPoints" class="pointsMade">
+                                0
+                            </span>
+                            <span>/</span>
+                            <span class='difficultyPoints'></span>
+                        </p>
+                        
+                    </div>
+                    <div class="col-6-lg">
+                        <p>ROBOT:</p>
+                        <p>
+                            <span id="robotPoints" class="pointsMade">
+                                0 
+                            </span>
+                            <span>/</span>
+                        <span class='difficultyPoints'></span>
+                        </p>
+                    </div>
+                </div>
 
+                <div class="row ">
+                    <div class="col-lg-8 btn-group btn-group-lg">
+                        <button id='easyLevel' type="button" class="btn btn-success">Easy</button>
+                        <button id='mediumLevel' type="button" class="btn btn-success">Medium</button>
+                        <button id='hardLevel' type="button" class="btn btn-success">Hard</button>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="rules.html">
+                            <button type="button" class="btn btn-secondary">
+                                Rules
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="buttonsGroup">
+                    <button type="button" id="rock" class="power btn btn-outline-danger">rock</button>
+                    <button type="button" id="paper" class="power btn btn-outline-danger">paper</button>
+                    <button type="button" id="scissors" class="power btn btn-outline-danger">scissors</button>
+                </div>
+                
+                <!-- <div class="row powerImageContainer">
+                </div> -->
+                <div id="jokenpo" class="container">
+                    JO-KEN-PO  
+                </div>
+
+                <div class="imagesBattleContainer p-3">
+                    <div class="transparentInternalDiv col-5">
+                        <img id="humanPowerImage" src="" alt="">
+                    </div>
+                    
+                    <div class="transparentInternalDiv col-2">
+                        <img id="versusImg" src="assets/images/characters/vs_2.png" alt="">
+                    </div>
+                    
+                    <div class="transparentInternalDiv col-5">
+                        <img id="robotPowerImage" src="" alt="">
+                    </div>
+                </div>
+        </div>
+        <img class="col-3" src="assets/images/characters/robot_3.png" alt="">
+    </main>
     
     <div id='battleResult' class="container"></div>
 

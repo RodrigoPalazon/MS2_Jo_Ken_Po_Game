@@ -43,6 +43,9 @@ let buttonLevel = $(difficultyBtn).click(function(){
 
     //Rock,Paper, Scissors
     $('.power').click(function getId(btn_id){
+
+        // setTimeout(function(){ console.log('waiting to display the image'); }, 3000);
+
         btn_id = this.id;
         player = btn_id;
         console.log("The ID chosen is "+ player);
@@ -50,6 +53,9 @@ let buttonLevel = $(difficultyBtn).click(function(){
         let humanImg = $('#humanPowerImage');
         let robotImg = $('#robotPowerImage');
         
+        $(humanImg).css("display", "block");
+        $(robotImg).css("display", "block");
+
         if(btn_id === 'rock'){
             humanImg.attr('src', imagesPath[0]);
         }else if(btn_id === 'paper'){
@@ -66,6 +72,12 @@ let buttonLevel = $(difficultyBtn).click(function(){
             robotImg.attr('src', imagesPath[2]);
         }
         play();
+
+        setTimeout(function(){
+            $(humanImg).css("display", "none");
+            $(robotImg).css("display", "none");
+        }, 2500);
+        
         // return btn_id;
     });
 
@@ -154,15 +166,10 @@ let buttonLevel = $(difficultyBtn).click(function(){
         
 
     let displayJokenpoMessage = () => {
-        // let syllables = ['#item1', '#item2', '#item3'];
-        // for (syllable of syllables) {
-            // setTimeout(function(){ 
-                $(".jokenpoMessage").css({"display": "inline-flex"}); 
-                setTimeout(function(){
-                    $(".jokenpoMessage").css({"display": "none"}); 
-                },2000); 
-            // }, 500);
-        // }
+      $("#jokenpo").css({"display": "block"}); 
+      setTimeout(function(){
+            $("#jokenpo").css({"display": "none"}); 
+        },2500); 
     }
     
     function increasePoint (point){
