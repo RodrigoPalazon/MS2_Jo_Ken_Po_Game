@@ -112,12 +112,15 @@ let buttonLevel = $(difficultyBtn).click(function(){
 
 
     function compare(pc,player){
-        let messageDiv = $("#battleResult");
+        let messageDiv = $("#battleResultHumanPoint");
+        let messageDivRobot = $("#battleResultRobotPoint");
         let message = ["TIED BATTLE", "HUMAN WON", "ROBOT WON"];
+        let plusOneStr = '+1 POINT';
        
             function timerMessage(){
                 setTimeout(() => {
                     messageDiv.text('');
+                    messageDivRobot.text('');
                 }, 1500);
             }
         // let player;
@@ -126,35 +129,36 @@ let buttonLevel = $(difficultyBtn).click(function(){
         //    setTimeout(()=>{
                 if(pc === player){
                     messageDiv.html(message[0]);
+                    messageDivRobot.html(message[0]);
                     timerMessage();
                     return message[0];
                 }else if(pc === 'rock'){
                         if(player === 'paper'){
-                            messageDiv.text(message[1]);
+                            messageDiv.text(plusOneStr);
                             timerMessage();
                             return message[1];
                         }else{
-                            messageDiv.text(message[2]);
+                            messageDivRobot.text(plusOneStr);
                             timerMessage();
                             return message[2];
                         }
                 }else if(pc === 'paper'){
                         if(player === 'scissors'){
-                            messageDiv.text(message[1]);
+                            messageDiv.text(plusOneStr);
                             timerMessage();
                             return message[1];
                         }else{
-                            messageDiv.text(message[2]);
+                            messageDivRobot.text(plusOneStr);
                             timerMessage();
                             return message[2];
                         }
                 }else if(pc === 'scissors'){
                     if(player === 'rock'){
-                        messageDiv.text(message[1]);
+                        messageDiv.text(plusOneStr);
                         timerMessage();
                         return message[1];
                     }else{
-                        messageDiv.text(message[2]);
+                        messageDivRobot.text(plusOneStr);
                         timerMessage();
                         return message[2];
                     }

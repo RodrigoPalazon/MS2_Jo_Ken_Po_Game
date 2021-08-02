@@ -28,24 +28,32 @@
             <button class="btn btn-danger">QUIT</button>
         </div>
         
-        <img class="col-3" src="assets/images/characters/human_3.jpg" alt="">
+        <img class="col-3" src="assets/images/characters/human_3_traparency.jpg" alt="">
         
         <div id='battleFied' class="container col-6 bg-light mt-3">
                 <div class="points row">
-                    <div class="col-6-lg">
-                        <p>HUMAN:</p>
+                    <div class="container-fluid namesOpponents">
+                        <div class="col-6-lg">
+                            <p>HUMAN</p>
+                        </div>
+                        <div class="col-6-lg">
+                             <p>ROBOT</p>
+                        </div>
+                    </div>
+                    <div class="col-6-lg placar">
                         <p>
                             <span id="humanPoints" class="pointsMade">
                                 0
                             </span>
                             <span>/</span>
                             <span class='difficultyPoints'></span>
+                            <span id='battleResultHumanPoint' class="container plusOnePoint"></span>
                         </p>
                         
                     </div>
-                    <div class="col-6-lg">
-                        <p>ROBOT:</p>
+                    <div class="col-6-lg placar">
                         <p>
+                            <span id='battleResultRobotPoint' class="container plusOnePoint"></span>
                             <span id="robotPoints" class="pointsMade">
                                 0 
                             </span>
@@ -99,7 +107,7 @@
         <img class="col-3" src="assets/images/characters/robot_3.png" alt="">
     </main>
     
-    <div id='battleResult' class="container"></div>
+    
 
 
     
