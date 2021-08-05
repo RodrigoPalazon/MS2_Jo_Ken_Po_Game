@@ -16,7 +16,16 @@ Interactive Jonkenpo game.
       2. As a First Time Visitor, I want to easily navigate throughout the site to find content.
       3. As a First Time Visitor, I want to easily recognize the clickable buttons and their functionalities.
       4. As a First Time Visitor, I want to easily understand how the game works or by being an obvious game or by receiving some instructions at the beginning.
-      __________*******_________
+   
+   -   #### Returning Visitor Goals
+
+        1. As a Returning Visitor, I want to find everything working as expected.
+        2. As a Returning Visitor, I want to find a more modern and improved design.
+        
+   -   #### Frequent User Goals
+        1. As a Frequent User, I want to check to see if there are any newly added features in the game.
+        2. As a Frequent User, I want to check to see if there are any new way to make points and interact with the game.
+        
 
 
 
