@@ -3,15 +3,13 @@ $(document).ready(function () {
   let difficultyBtn = "#menuPageDifficulty";
   let levels = ["EASY", "MEDIUM", "HARD"];
 
-  console.log(localStorage.getItem("levels"));
-  
   let j = 0;
-  
   let buttonLevel = $(difficultyBtn).click(function () {
     j++;
     $(difficultyBtn).text(levels[j]);
     if (j === levels.length) {
       j=0;
+      $(difficultyBtn).text(levels[j]);
     } 
    });
 
@@ -193,19 +191,16 @@ $(document).ready(function () {
   // .....Difficulty buttons ......
   // create a function outside and add the beneath code
 
-  function swicthLevel(element, point) {
+    function swicthLevel(element, point) {
     $(".difficultyPoints").text(point.toString());
     $(element).addClass("btn-danger");
     
     if(element.id === "easyLevel"){
-      $('#mediumLevel').removeClass("btn-danger");
-      $('#hardLevel').removeClass("btn-danger");
+      $('#mediumLevel, #hardLevel').removeClass("btn-danger");
     }else if(element.id === "mediumLevel"){
-      $('#easyLevel').removeClass("btn-danger");
-      $('#hardLevel').removeClass("btn-danger");
+      $('#easyLevel, #hardLevel').removeClass("btn-danger");
     }else{
-      $('#easyLevel').removeClass("btn-danger");
-      $('#mediumLevel').removeClass("btn-danger");
+      $('#easyLevel, #mediumLevel').removeClass("btn-danger");
     }
   }
 
