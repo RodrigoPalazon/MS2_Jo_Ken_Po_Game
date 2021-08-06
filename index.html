@@ -20,24 +20,52 @@
 
     <main>
         <div id="trasparentDiv" class="container-fluid">
-            <div class="container-fluid">
+            <div id="winnerContainer" class="container">
                 <h3 id="winnerMessage"></h3>
+                <div class="btn-group col-lg-12">
+                    <a href="index.html">
+                        <button class="btn btn-success">
+                            PLAY AGAIN
+                        </button>
+                    </a>
+                    <a href="rules.html">
+                        <button class="btn btn-danger">RULES</button>
+                    </a>
+                    <a href="menu.html">
+                        <button class="btn btn-danger">QUIT</button>
+                    </a>
+                </div>  
             </div>
-            <a href="index.html"><button class="btn btn-success">PLAY AGAIN</button></a>
-            <button class="btn btn-danger">RULES</button>
-            <button class="btn btn-danger">QUIT</button>
         </div>
         
-        <img class="col-3" src="assets/images/characters/human_3_traparency.jpg" alt="">
         
-        <div id='battleFied' class="container col-6 bg-light mt-3">
+        <div class="row ">
+            <div class="btn-group mt-2">
+                <button id='easyLevel' type="button" class="btn easyMediumHard">EASY</button>
+                <button id='mediumLevel' type="button" class="btn easyMediumHard">MEDIUM</button>
+                <button id='hardLevel' type="button" class="btn easyMediumHard">HARD</button>
+                <a href="rules.html">
+                    <button id="rulesButton"type="button" class="btn btn-secondary">
+                        Rules
+                    </button>
+                </a>
+            </div>
+            <!-- <div class="col-lg-4">
+                
+            </div> -->
+        </div>
+
+        <div id='battleFied' class="container col-9 bg-light mt-5">
                 <div class="points row">
                     <div class="container-fluid namesOpponents">
-                        <div class="col-6-lg">
+                        <div class="players">
                             <p>HUMAN</p>
+                            <img id="humanImage" src="assets/images/characters/human_3_traparency.jpg" alt="Human body simple draw.">
+                            
                         </div>
-                        <div class="col-6-lg">
-                             <p>ROBOT</p>
+                        <div class="players">
+                             <p id=robotName>ROBOT</p>
+                             <img id="robotImage" src="assets/images/characters/robot_3_transparency.png" alt="Robot head.">
                         </div>
                     </div>
                     <div class="col-6-lg placar">
@@ -63,20 +91,7 @@
                     </div>
                 </div>
 
-                <div class="row ">
-                    <div class="col-lg-8 btn-group btn-group-lg">
-                        <button id='easyLevel' type="button" class="btn btn-success">Easy</button>
-                        <button id='mediumLevel' type="button" class="btn btn-success">Medium</button>
-                        <button id='hardLevel' type="button" class="btn btn-success">Hard</button>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="rules.html">
-                            <button type="button" class="btn btn-secondary">
-                                Rules
-                            </button>
-                        </a>
-                    </div>
-                </div>
+                
 
                 <div class="buttonsGroup">
                     <button type="button" id="rock" class="power btn btn-outline-danger">rock</button>
@@ -86,17 +101,17 @@
                 
                 <!-- <div class="row powerImageContainer">
                 </div> -->
-                <div id="jokenpo" class="container">
+                <div id="jokenpo" class="container-fluid mt-3">
                     JO-KEN-PO  
                 </div>
 
-                <div class="imagesBattleContainer p-3">
+                <div class="imagesBattleContainer mt-3">
                     <div class="transparentInternalDiv col-5">
                         <img id="humanPowerImage" src="" alt="">
                     </div>
                     
                     <div class="transparentInternalDiv col-2">
-                        <img id="versusImg" src="assets/images/characters/vs_2.png" alt="">
+                        <img id="versusImg" src="assets/images/characters/vs_2_transparency.png" alt="">
                     </div>
                     
                     <div class="transparentInternalDiv col-5">
@@ -104,7 +119,7 @@
                     </div>
                 </div>
         </div>
-        <img class="col-3" src="assets/images/characters/robot_3.png" alt="">
+
     </main>
     
     
