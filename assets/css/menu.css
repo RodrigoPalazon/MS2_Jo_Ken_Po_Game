@@ -3,28 +3,76 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(243, 201, 201);
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items:center;
+    align-self: flex-end; 
+    /* display:grid;
+    place-content:center; */
+    background-color:  rgb(17, 17, 17);
 }
 
-.logo{
-    width: 90%;
-    height: 10em;
+.container-fluid{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53, 4, 117);
+    color: white;
+    /* font-size: 20%; */
+}
+
+div.container.logo{
+    margin: 25% 0%;
+    width: 100%;
+    /* height: 10em; */
     background-color:  rgb(21, 1, 105);
     color: white;
-    border-radius: 50%;
+    border-radius: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.btn-group{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+h1{
+    font-size: 200%;
+    padding-top: 5%;
 }
 
-.btn{
+.btn-group{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* margin-left: 50%; */
+    position: fixed;
+    bottom:5%;
+    /* align-self: center; */
+}
+
+.btn, #menuPageDifficulty{
     width:50%;
+    min-height: 5vh;
+    margin-left:25%;
+}
+
+/* Images */
+img{
+    max-width: 60%;
+    max-height: 50vh;
+    /* margin-top: 2%; */
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*.... Links .....*/
+header > a{
+    text-decoration: none;
+    color: white;
+}
+
+header > a:hover{
+    text-decoration: none;
+    color: white;
 }
