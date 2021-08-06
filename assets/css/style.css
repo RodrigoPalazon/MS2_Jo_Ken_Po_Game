@@ -21,13 +21,15 @@ main{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(21, 1, 105);
+    background-color: rgb(53, 4, 117);
     color: white;
+    /* border-radius: 10px; */
 }
 
 h1{
     font-size: 200%;
     padding-top: 5%;
+    text-shadow: 1px 1px 5px #fc7afc;
 }
 
 #battleFied{
@@ -35,9 +37,11 @@ h1{
     flex-direction: column;
     width: 100%;
     min-height: 65vh;
+    box-shadow: 10px 10px 30px rgb(36, 2, 82);
     /* border: solid 2px red; */
     /* padding: 10px; */
     /* z-index: 1; */
+    /* border-radius: 10px; */
 }
 
 @media only screen and (max-width: 425px){
@@ -97,18 +101,7 @@ h1{
     padding: 5% 0;
 }
 
-#containerRules{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(148, 130, 223);
-    color: rgb(12, 12, 12);
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
+
 
 #containerRules .row{
     display: flex;
@@ -158,6 +151,7 @@ h1{
     display: flex;
     justify-content: space-between;   
     /* height: auto;  */
+    border-bottom: double 1px rgb(53, 4, 117);
 }
 
 /* .namesOpponents:nth-child(2){
@@ -171,6 +165,8 @@ h1{
     justify-content: center;
     background-color: white;
     height: auto;
+    border-right:double 2px rgb(157, 255, 157);
+    border-left:double 2px rgb(157, 255, 157);
 }
 
 @media only screen and (max-width: 425px){
@@ -226,6 +222,13 @@ h1{
 #rulesButton{
     border:none;
 }
+
+#trasparentDiv .btn{ 
+    width: 165%;
+    margin-left: -35%;
+    border: none;
+    margin-top: 2%;
+}
 /*.... INCREASE POINT  .....*/
 
 .points{
@@ -259,9 +262,9 @@ h1{
     }  
 
     #trasparentDiv .btn{ 
-        width: 165%;
+        /* width: 165%;
         margin-left: -35%;
-        border: none;
+        border: none; */
         margin-top: 5%;
     }
     

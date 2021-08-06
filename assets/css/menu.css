@@ -37,6 +37,7 @@ div.container.logo{
 h1{
     font-size: 200%;
     padding-top: 5%;
+    text-shadow: 1px 1px 5px #fc7afc;
 }
 
 .btn-group{
