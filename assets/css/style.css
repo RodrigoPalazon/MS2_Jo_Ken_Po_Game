@@ -3,6 +3,8 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(243, 201, 201);
+    height: 100%;
+    background-color:  rgb(255, 200, 168);
 }
 
 
@@ -10,7 +12,9 @@ body{
 main{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    flex-direction: column;
+    /* min-height: 90%; */
 }
 
 .container-fluid{
@@ -21,23 +25,61 @@ main{
     color: white;
 }
 
+h1{
+    font-size: 200%;
+    padding-top: 5%;
+}
+
 #battleFied{
     display: flex;
     flex-direction: column;
-    width: 85%;
-    /* height: 15rem; */
+    width: 100%;
+    min-height: 65vh;
+    /* border: solid 2px red; */
     /* padding: 10px; */
     /* z-index: 1; */
 }
 
+@media only screen and (max-width: 425px){
+    #battleFied{
+        /* display: flex;
+        flex-direction: column; */
+        max-width: 95%;
+        /* width: 100%; */
+        /* min-height: 60vh; */
+        /* border: solid 2px red; */
+        /* padding: 10px; */
+        /* z-index: 1; */
+    }   
+}
+
+
 #trasparentDiv{
     display:none;
+    /* width: 100%; */
     height: 100vh;
     position: absolute;
     left: 0px;
     top: 0px;
-    background-color: rgba(106, 80, 209, 0.8);
+    background-color: rgba(106, 80, 209, 0.9);
+    margin-left: auto;
+    margin-right: auto;
     z-index: 1;
+}
+
+#trasparentDiv .btn-group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+#trasparentDiv .btn{
+    width: 100%;
+}
+
+#winnerContainer{
+    background-color:rgb(69, 11, 146);
 }
 
 .row.powerImageContainer{
@@ -45,10 +87,14 @@ main{
     justify-content: space-around;
 }
 
-#trasparentDiv #winnerMessage{
+#trasparentDiv #winnerContainer{
+    margin-top: 30vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     color: white;
+    padding: 5% 0;
 }
 
 #containerRules{
@@ -76,52 +122,110 @@ main{
 
 .imagesBattleContainer{
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #jokenpo{
     display: none;
-    z-index: 1;
-    position: absolute;
-    left: 9%;
+    /* z-index: 1; */
+    /* position: absolute;
+    left: 10%;
     top: 52%;
-    width: 84.5%;
+    width: 84%; */
     background-color:rgb(69, 11, 146);
     color: white;
+    font-size: 3vw;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .transparentInternalDiv{
     /* width:30px; */
+    /* margin-top: 25%; */
     height:30vh;
     /* background-color: red; */
     /* border: green 2px solid; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    /* flex-direction: column; */
 }
+
+/* .transparentInternalDiv .btn-group{
+    
+} */
 
 .namesOpponents{
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;   
+    /* height: auto;  */
+}
+
+/* .namesOpponents:nth-child(2){
+    justify-content: flex-end;
+} */
+
+.players{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    height: auto;
+}
+
+@media only screen and (max-width: 425px){
+    .players{
+        width: 40%;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        height: auto; */
+    }
+}
+
+.players:nth-child(2){
+    height: 100%;
 }
 
 .namesOpponents div p{
-    font-size: 3vw;
-    align-items: center;
+    /* font-size: 40%; */
+    background-color: green;
+    text-align: center;
     margin-bottom: 0;
+    /* align-items: center; */
+    /* width: auto; */
+    /* display: inline-block; */
 }
 
+#robotName {
+    margin-top: -24%;
+    /* color:red; */
+}
+/* .card{
+
+} */
 /* ........ BUTTONS ........ */
 
 .buttonsGroup{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: flex-start; */
 }
 
 .clicked{
     color:red;
 }
 
+.btn-group .btn{
+    border: solid 2px red;
+    /* color:red; */
+}
+
+#rulesButton{
+    border:none;
+}
 /*.... INCREASE POINT  .....*/
 
 .points{
@@ -139,7 +243,32 @@ main{
     color:green;
     font-size: 1.5vw;
     font-weight: bold;
-    margin: 1%;
+    margin: 2% 5%;
+}
+
+@media only screen and (max-width: 425px){
+    #humanPoints, #robotPoints{
+        font-size: 6.5vw;
+    }
+
+    .placar{
+        /* color:green; */
+        font-size: 3.5vw;
+        /* font-weight: bold;
+        margin: 2% 5%; */
+    }  
+
+    #trasparentDiv .btn{ 
+        width: 165%;
+        margin-left: -35%;
+        border: none;
+        margin-top: 5%;
+    }
+    
+}
+
+.pointsMade{
+    font-size:2.5vw;
 }
 /*.... Links .....*/
 header > a{
@@ -154,11 +283,56 @@ header > a:hover{
 
 /* ..... Images ....*/
 #versusImg{
-    width:100%;
-    max-height: 50%;
+    width:80%;
+    min-width: 40px;
+    /* max-height: 30%; */
+    display: none;
 }
 
 img .col-3{
     /* height: 2.9em; */
-    max-height: .5em;
+    max-height: .2em;
+}
+
+.transparentInternalDiv{
+    height:20%;
+}
+
+#robotImage{
+    /* padding-top:10%; */
+}
+
+#humanImage{
+    /* max-height: 10vh; */
+}
+
+@media only screen and (max-width: 425px){
+    #versusImg{
+        /* width:100%; */
+        min-width: 200%;
+        /* max-height: 30%; */
+        /* display: none; */
+    }
+
+    .placar {
+        /* color: green; */
+        font-size: 3.5vw;
+    }
+    
+    .plusOnePoint {
+        color: red;
+        font-weight: bold;
+        font-size: 3.0vw;
+    }
+
+    #humanPowerImage, #robotPowerImage {
+        width: 90%;
+        /* background-color: pink; */
+    }
+}
+
+
+/* Headings */
+#winnerContainer h3{
+    text-shadow: 2px 2px 10px #fc7afc;
 }
