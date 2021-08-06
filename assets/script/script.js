@@ -220,4 +220,11 @@ $(document).ready(function () {
     swicthLevel(this, 9);
     localStorage.setItem("levels", "hard");
   });
+
+
+  // $("#playButton").click(function () {
+  //   difficultyBtn = $("#menuPageDifficulty").text();
+  //   console.log(difficultyBtn);
+  //   localStorage.setItem("levelsMenu", $(difficultyBtn).toString());
+  // });
 });
