@@ -191,7 +191,7 @@ $(document).ready(function () {
   // .....Difficulty buttons ......
   // create a function outside and add the beneath code
 
-    function swicthLevel(element, point) {
+    function switchLevel(element, point) {
     $(".difficultyPoints").text(point.toString());
     $(element).addClass("btn-danger");
     
@@ -205,19 +205,19 @@ $(document).ready(function () {
   }
 
   $("#easyLevel").click(function () {
-    swicthLevel(this, 3);
+    switchLevel(this, 3);
     localStorage.setItem("levels", "easy");
   });
 
   // $("#easyLevel").click();
 
   $("#mediumLevel").click(function () {
-    swicthLevel(this, 5);
+    switchLevel(this, 5);
     localStorage.setItem("levels", "medium");
   });
 
   $("#hardLevel").click(function () {
-    swicthLevel(this, 9);
+    switchLevel(this, 9);
     localStorage.setItem("levels", "hard");
   });
 
