@@ -1,0 +1,27 @@
+@import url("style.css");
+
+#containerRules{
+    background-color: rgb(148, 130, 223);
+    color: rgb(12, 12, 12);
+    width: 90%;
+    margin-top:5%;
+    margin-bottom:5%;
+    box-shadow: 7px 7px 5px rgb(179, 126, 248);
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#containerRules ul{
+    margin-left: -5%;
+}
+
+#containerRules ul li{
+    margin-left: -5%;
+}
+
+/* ....BUTTONS..*/
+
+.btn-success{
+    border: solid 2px white;
+}
