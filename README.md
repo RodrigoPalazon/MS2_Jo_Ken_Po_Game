@@ -1,6 +1,6 @@
 # MS2_Jo_Ken_Po_Game
 
-<!-- View the live project here. -->
+[View the live project here.](https://rodrigopalazon.github.io/MS2_Jo_Ken_Po_Game/)
 
 This is a Battle Game, that the player fights againts the computer chosing between three "Powers". It is designed to be responsive and interactive.
 
@@ -26,8 +26,18 @@ Interactive Jonkenpo game.
         1. As a Frequent User, I want to check to see if there are any newly added features in the game.
         2. As a Frequent User, I want to check to see if there are any new way to make points and interact with the game.
         
+   -   ### Design
+    -   #### Colour Scheme
+        -   The two main colours used are Code Insititue darkblue, and white.
+    -   #### Typography
+        -   The Times New Roman font is the main font used throughout the whole website with Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. 
+    -   #### Imagery
+        -   Imagery is important. The character images help the user identifying which one he's playing with.
+The powers' images reinforce the user's choice making the result easily understandable.
 
+*   ### Wireframes
 
+    -   Home Page Wireframe - [View](assets/images/characters/wireframe.png)
 
 
 
