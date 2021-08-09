@@ -37,9 +37,36 @@ The powers' images reinforce the user's choice making the result easily understa
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View](assets/images/characters/wireframe.png)
+    -   Home Page Wireframe - [View](https://www.figma.com/file/hgVfsd9I89RFnBdP1VfAsN/MS2---Jo-Ken-Po?node-id=0%3A1)
 
+## Features
 
+-   Responsive on all device sizes
+
+-   Interactive elements
+
+## Technologies Used
+
+### Languages Used
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+### Frameworks, Libraries & Programs Used
+
+1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+    - Bootstrap was used to assist with the responsiveness and styling of the website.
+1. [jQuery:](https://jquery.com/)
+    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+1. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+1. [Gimp:](https://www.gimp.org/)
+    - Gimp was used to create the logo, resizing images and editing photos for the website.
+1. [Figma:](https://balsamiq.com/)
+    - Balsamiq was used to create the [wireframes](https://www.figma.com/file/hgVfsd9I89RFnBdP1VfAsN/MS2---Jo-Ken-Po?node-id=0%3A1) during the design process.
 
 ## CREDITS: 
 ---
