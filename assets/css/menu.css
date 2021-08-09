@@ -8,8 +8,6 @@ body{
     flex-direction: column;
     align-items:center;
     align-self: flex-end; 
-    /* display:grid;
-    place-content:center; */
     background-color:  rgb(17, 17, 17);
 }
 
@@ -19,13 +17,11 @@ body{
     align-items: center;
     background-color: rgb(53, 4, 117);
     color: white;
-    /* font-size: 20%; */
 }
 
 div.container.logo{
     margin: 25% 0%;
     width: 100%;
-    /* height: 10em; */
     background-color:  rgb(21, 1, 105);
     color: white;
     border-radius: 30%;
@@ -42,12 +38,9 @@ h1{
 
 .btn-group{
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
-    /* margin-left: 50%; */
     position: fixed;
     bottom:5%;
-    /* align-self: center; */
 }
 
 .btn{
@@ -60,18 +53,11 @@ h1{
     margin-left:25%;
 }
 
-@media only screen and (max-width: 425px){
-    .btn{
-        font-size: 150%;
-        margin-bottom: 2%;
-    }
-}
 
-/* Images */
+/*.... Images ....*/
 img{
     max-width: 60%;
     max-height: 50vh;
-    /* margin-top: 2%; */
     position: fixed;
     top: 45%;
     left: 50%;
@@ -91,4 +77,37 @@ header > a{
 header > a:hover{
     text-decoration: none;
     color: white;
+}
+
+
+
+@media only screen and (max-width: 768px){
+	h1{
+        font-size: 400%;
+        padding-bottom: 6px;
+    }
+    
+    .btn{
+        font-size: 170%;
+        font-weight: bold;
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    h1{
+        font-size: 210%;
+        padding-bottom: 6px;
+        padding-top: 18px;
+    }
+
+    .btn{
+        font-size: 110%;
+        margin-bottom: 2%;
+    }
+
+    img{
+        max-width: 80%;
+        max-height: 70vh;
+    }
 }
