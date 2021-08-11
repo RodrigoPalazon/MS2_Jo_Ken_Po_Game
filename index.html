@@ -21,19 +21,23 @@
     <main>
         <div id="trasparentDiv" class="container-fluid">
             <div id="winnerContainer" class="container">
-                <h3 id="winnerMessage"></h3>
+                <h3 id="winnerMessage">.</h3>
                 <div class="btn-group col-lg-12">
-                    <a href="index.html">
-                        <button class="btn btn-success">
+                    <button onclick="window.location.href='index.html'" class="btn btn-success">
+                        <!-- <a href="index.html"> -->
                             PLAY AGAIN
+                        <!-- </a> -->
+                    </button>
+                    <!-- <a href="rules.html"> -->
+                        <button onclick="window.location.href='rules.html'"  class="btn btn-danger">
+                            RULES
                         </button>
-                    </a>
-                    <a href="rules.html">
-                        <button class="btn btn-danger">RULES</button>
-                    </a>
-                    <a href="menu.html">
-                        <button class="btn btn-danger">QUIT</button>
-                    </a>
+                    <!-- </a> -->
+                    <!-- <a href="menu.html"> -->
+                        <button onclick="window.location.href='menu.html'"  class="btn btn-danger">
+                            QUIT
+                        </button>
+                    <!-- </a> -->
                 </div>  
             </div>
         </div>
@@ -44,11 +48,12 @@
                 <button id='easyLevel' type="button" class="btn easyMediumHard">EASY</button>
                 <button id='mediumLevel' type="button" class="btn easyMediumHard">MEDIUM</button>
                 <button id='hardLevel' type="button" class="btn easyMediumHard">HARD</button>
-                <a href="rules.html">
-                    <button id="rulesButton"type="button" class="btn btn-secondary">
+                
+                <!-- <a href="rules.html"> -->
+                    <button id="rulesButton" type="button" onclick="window.location.href='rules.html'" class="btn btn-secondary">
                         Rules
                     </button>
-                </a>
+                <!-- </a> -->
             </div>
             <!-- <div class="col-lg-4">
                 
@@ -107,7 +112,7 @@
 
                 <div class="imagesBattleContainer mt-3">
                     <div class="transparentInternalDiv col-5">
-                        <img id="humanPowerImage" src="" alt="">
+                        <img id="humanPowerImage" src="xxx" alt="">
                     </div>
                     
                     <div class="transparentInternalDiv col-2">
@@ -115,7 +120,7 @@
                     </div>
                     
                     <div class="transparentInternalDiv col-5">
-                        <img id="robotPowerImage" src="" alt="">
+                        <img id="robotPowerImage" src="xxx" alt="">
                     </div>
                 </div>
         </div>
