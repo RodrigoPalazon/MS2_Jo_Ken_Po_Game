@@ -66,7 +66,7 @@ The powers' images reinforce the user's choice making the result easily understa
 1. [Gimp:](https://www.gimp.org/)
     - Gimp was used to create the logo, resizing images and editing photos for the website.
 1. [Figma:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](https://www.figma.com/file/hgVfsd9I89RFnBdP1VfAsN/MS2---Jo-Ken-Po?node-id=0%3A1) during the design process.
+    - Figma was used to create the [wireframe](https://www.figma.com/file/hgVfsd9I89RFnBdP1VfAsN/MS2---Jo-Ken-Po?node-id=0%3A1) during the design process.
 
 ## CREDITS: 
 ---
