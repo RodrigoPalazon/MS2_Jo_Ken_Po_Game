@@ -9,6 +9,7 @@ body{
     align-items:center;
     align-self: flex-end; 
     background-color:  rgb(17, 17, 17);
+    font-family: "Times New Roman", Times, serif;
 }
 
 .container-fluid{

@@ -25,7 +25,7 @@ $(document).ready(function () {
 
   let imagesPath = [
     "assets/images/rocks/rock_3.jpg",
-    "assets/images/papers/paper_4.jpg",
+    "assets/images/papers/paper_5.jpg",
     "assets/images/scissors/scissor_5.png",
   ];
 
@@ -189,9 +189,7 @@ $(document).ready(function () {
   }
 
   // .....Difficulty buttons ......
-  // create a function outside and add the beneath code
-
-    function switchLevel(element, point) {
+  function switchLevel(element, point) {
     $(".difficultyPoints").text(point.toString());
     $(element).addClass("btn-danger");
     
@@ -209,8 +207,6 @@ $(document).ready(function () {
     localStorage.setItem("levels", "easy");
   });
 
-  // $("#easyLevel").click();
-
   $("#mediumLevel").click(function () {
     switchLevel(this, 5);
     localStorage.setItem("levels", "medium");
@@ -220,11 +216,4 @@ $(document).ready(function () {
     switchLevel(this, 9);
     localStorage.setItem("levels", "hard");
   });
-
-
-  // $("#playButton").click(function () {
-  //   difficultyBtn = $("#menuPageDifficulty").text();
-  //   console.log(difficultyBtn);
-  //   localStorage.setItem("levelsMenu", $(difficultyBtn).toString());
-  // });
 });
