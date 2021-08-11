@@ -4,7 +4,7 @@
 
 This is a Battle Game, that the player fights againts the computer chosing between three "Powers". It is designed to be responsive and interactive.
 
-Interactive Jonkenpo game.
+<h2 align="center"><img src="assets/images/characters/responsivity.png"></h2>
 
 ## User Experience (UX)
 
@@ -68,6 +68,27 @@ The powers' images reinforce the user's choice making the result easily understa
 1. [Figma:](https://balsamiq.com/)
     - Figma was used to create the [wireframe](https://www.figma.com/file/hgVfsd9I89RFnBdP1VfAsN/MS2---Jo-Ken-Po?node-id=0%3A1) during the design process.
 
+## Testing
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+-   [W3C Markup Validator - menu.html](assets/images/readme/htmlValidator_menu.png) 
+-   [W3C Markup Validator - index.html](assets/images/readme/htmlValidator_index.png) 
+-   [W3C Markup Validator - index.html](assets/images/readme/htmlValidator_rules.png) 
+
+-   [W3C CSS Validator - menu.css](assets/images/readme/cssValidator_menu.png) 
+-   [W3C CSS Validator - style.css](assets/images/readme/cssValidator_style_index.png)
+-   [W3C CSS Validator - rules.css](assets/images/readme/cssValidator_rules.png)
+
+### Testing User Stories from User Experience (UX) Section
+
+-   #### First Time Visitor Goals
+
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
+
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
+        2. The main points are made immediately with the hero image
+        3. The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
 ## CREDITS: 
 ---
 #### Code:
