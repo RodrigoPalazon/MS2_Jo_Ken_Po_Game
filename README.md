@@ -12,7 +12,7 @@ This is a Battle Game, that the player fights againts the computer chosing betwe
 
    - #### First Time Visitor Goals
 
-      1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
+      1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more its content.
       2. As a First Time Visitor, I want to easily navigate throughout the site to find content.
       3. As a First Time Visitor, I want to easily recognize the clickable buttons and their functionalities.
       4. As a First Time Visitor, I want to easily understand how the game works or by being an obvious game or by receiving some instructions at the beginning.
@@ -80,15 +80,34 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C CSS Validator - style.css](assets/images/readme/cssValidator_style_index.png)
 -   [W3C CSS Validator - rules.css](assets/images/readme/cssValidator_rules.png)
 
+
+<!-- missing JavaScript validation -->
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
 
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more its content.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
-        2. The main points are made immediately with the hero image
-        3. The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice.
+        <!-- 2. The main points are made immediately with the hero image -->
+        2. The user has three options, click the "PLAY" button to start the game, click on "EASY" button switch button's value though "EASY", "MEDIUM", "HARD", or clicking on "Rules" to learn more about the JO_KEN_PO Battle.
+
+    2. As a First Time Visitor, I want to easily navigate throughout the site to find content.
+        1. The site(game) has been designed to be fluid and never to entrap the user. At the top of each page there is a bar with a clickable logo that always brings the user to the entrance page.
+        2. At the game's main page, beneath the top bar, there are 3 buttons that the user can switch the level, making the number of rounds increasing or decreasing.
+        3. Besides the levels' buttons, there is a "Rules" button, that displays an explanation of how the game works.
+
+    3. As a First Time Visitor, I want to easily recognize the clickable buttons and their functionalities.
+        1. The site(game) has been designed to be fluid and with clickable elements and their functionalities easily understandable.
+    
+    4. As a First Time Visitor, I want to easily understand how the game works or by being an obvious game or by receiving some instructions at the beginning.
+
+        1. The site(game) has been designed that the user can independently in which page, section, or moment of the game, to access the "Rules" page with just one click.
+        2. The site(game) has been designed that the user can independently in which page, section, or moment of the game, to access the JO_KEN_PO Battle page with just one click.
+
+ -   #### Returning Visitor Goals
+
+        1. As a Returning Visitor, I want to find everything working as expected.        
 ## CREDITS: 
 ---
 #### Code:
