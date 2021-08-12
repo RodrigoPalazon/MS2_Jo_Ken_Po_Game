@@ -4,7 +4,7 @@
 
 This is a Battle Game, that the player fights againts the computer chosing between three "Powers". It is designed to be responsive and interactive.
 
-<h2 align="center"><img src="assets/images/characters/responsivity.png"></h2>
+<h2 align="center"><img src="assets/images/readme/responsivity.png"></h2>
 
 ## User Experience (UX)
 
