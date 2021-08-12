@@ -23,8 +23,8 @@ This is a Battle Game, that the player fights againts the computer chosing betwe
         2. As a Returning Visitor, I want to find a more modern and improved design.
         
    -   #### Frequent User Goals
-        1. As a Frequent User, I want to check to see if there are any newly added features in the game.
-        2. As a Frequent User, I want to check to see if there are any new way to make points and interact with the game.
+        1. As a Frequent User, I want to check if there are any newly added features in the game.
+        2. As a Frequent User, I want to check if there are any new way to make points and interact with the game.
         
    -   ### Design
     -   #### Colour Scheme
@@ -101,17 +101,90 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         1. The site(game) has been designed to be fluid and with clickable elements and their functionalities easily understandable.
     
     4. As a First Time Visitor, I want to easily understand how the game works or by being an obvious game or by receiving some instructions at the beginning.
-
         1. The site(game) has been designed that the user can independently in which page, section, or moment of the game, to access the "Rules" page with just one click.
         2. The site(game) has been designed that the user can independently in which page, section, or moment of the game, to access the JO_KEN_PO Battle page with just one click.
 
- -   #### Returning Visitor Goals
+-   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to find everything working as expected.        
+    1. As a Returning Visitor, I want to find everything working as expected.
+        1. I would not like to find any error our fail if no relevant improvement was made.
+        2. Even with a more modern design, I want to be able to play the game without any difficulty.
+    
+    2. As a Returning Visitor, I want to find a more modern and improved design.
+        1. Returning to the site(game), after few months, I want to recognize at least few improvements, for example, a more modern button design, image, and/or fonts.
+
+-   #### Frequent User Goals
+    1. As a Frequent User, I want to check if there are any newly added features in the game.
+        1. It can be a different rule, or a different character that I can play with, or a different "power" that I can use against the computer.
+        2. It can be a different level of difficulty, or the option the choose some scenarios as a background.
+
+    2. As a Frequent User, I want to check if there are any new way to make points and interact with the game.
+        1. It can be by accumulating points, or to have a opportunite to use a special power.
+
+### Further Testing
+
+-   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Large Screens, Laptop, iPhone7, iPhone 8 & iPhoneX.
+-   A large amount of testing was done to ensure that all pages were linking correctly.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+### Known Bugs
+
+-  When the page index.html is loaded, it brings up an error by some "src" not being found, it happens because the "src" values are created dynamically by the JavaScript when the user does your first choice against the computer.
+    <!-- -   A white gap can be seen to the right of the footer and navigation bar as a result.
+-   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them. -->
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/RodrigoPalazon/MS2_Jo_Ken_Po_Game)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Main Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://rodrigopalazon.github.io/MS2_Jo_Ken_Po_Game/) in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/RodrigoPalazon/MS2_Jo_Ken_Po_Game)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/RodrigoPalazon/MS2_Jo_Ken_Po_Game)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/RodrigoPalazon/MS2_Jo_Ken_Po_Game
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+git clone https://github.com/RodrigoPalazon/MS2_Jo_Ken_Po_Game
+Cloning into 'MS2_Jo_Ken_Po_Game'...
+remote: Enumerating objects: 338, done.
+remote: Counting objects: 100% (338/338), done.
+remote: Compressing objects: 100% (234/234), done.
+remote: Total 338 (delta 115), reused 293 (delta 73), pack-reused 0
+Receiving objects: 100% (338/338), 5.38 MiB | 8.18 MiB/s, done.
+Resolving deltas: 100% (115/115), done.
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
 ## CREDITS: 
 ---
 #### Code:
-
     
    1. README: 
       - [Code-Institute-Solutions/SampleREADME](https://github.com/Code-Institute-Solutions/SampleREADME)
@@ -122,3 +195,22 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
    2. CENTRALIZING DIV RESPONSIVILY:
       -[StackOverflow](https://stackoverflow.com/questions/12645366/css-responsive-center-div)
       Author:-[Steve Glick](https://stackoverflow.com/users/1618141/steve-glick)
+
+### Content
+
+-   All content was written by [Rodrigo Palazon](https://github.com/RodrigoPalazon).
+
+### Media
+
+-   Rock, Paper, Scissors - [link](https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons).
+
+-   Robot Image - [link](https://flyclipart.com/robot-icon-png-and-vector-for-free-download-robot-icon-png-245964).
+
+-   Human Image - [link](https://png.is/f/free-person-icon-png-transparent-91500-download-person-icon-png/comdlpng6945136-201911171129.html).
+
+### Acknowledgements
+
+-   My Mentor [Jack Wachira](https://github.com/iamjackwachira) for continuous helpful feedback.
+
+_-   Code Institute's tutors and students for their support via Slack._
+
