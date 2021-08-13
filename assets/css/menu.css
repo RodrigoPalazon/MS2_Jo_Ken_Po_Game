@@ -1,13 +1,14 @@
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    align-content:center;
+    width: 100%;
+    height:auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(243, 201, 201);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items:center;
-    align-self: flex-end; 
     background-color:  rgb(17, 17, 17);
     font-family: "Times New Roman", Times, serif;
 }
@@ -18,17 +19,7 @@ body{
     align-items: center;
     background-color: rgb(53, 4, 117);
     color: white;
-}
-
-div.container.logo{
-    margin: 25% 0%;
-    width: 100%;
-    background-color:  rgb(21, 1, 105);
-    color: white;
-    border-radius: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 5%;
 }
 
 h1{
@@ -40,33 +31,22 @@ h1{
 .btn-group{
     display: flex;
     flex-direction: column;
-    position: fixed;
-    bottom:5%;
+    justify-content: center;
+    max-width: 60%;
+    margin-left: 25%;
+    margin-top: 7%;
 }
 
 .btn{
     margin-bottom: 1%;
-}
-
-.btn, #menuPageDifficulty{
     width:50%;
-    min-height: 5vh;
-    margin-left:25%;
 }
-
 
 /*.... Images ....*/
 img{
     max-width: 60%;
     max-height: 50vh;
-    position: fixed;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-div img{
-     box-shadow: 5px 5px 10px rgb(179, 126, 248);
+    box-shadow: 5px 5px 10px rgb(179, 126, 248);
 }
 
 /*.... Links .....*/
@@ -96,6 +76,10 @@ header > a:hover{
 }
 
 @media only screen and (max-width: 425px){
+    .container-fluid{
+        margin-bottom: 30%;
+    }
+    
     h1{
         font-size: 210%;
         padding-bottom: 6px;
@@ -105,6 +89,13 @@ header > a:hover{
     .btn{
         font-size: 110%;
         margin-bottom: 2%;
+        width:80%;
+    }
+
+    .btn-group{
+        margin-top: 25%;
+        max-width: 60%;
+        margin-left: 12.5%;
     }
 
     img{
