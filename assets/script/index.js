@@ -1,8 +1,14 @@
+const points = {
+  easy: 3,
+  medium: 5,
+  hard: 9
+}
+
 $(document).ready(function () {
-  
-  
+  let selectedLevel = sessionStorage.getItem('selectedLevel');
 
-
+  selectLevel(selectedLevel);
+  
   //...... PC random choice;
   let powers = ["rock", "paper", "scissors"];
   // generate a random index
@@ -178,42 +184,35 @@ $(document).ready(function () {
     // }, 3500);
   }
 
-  // .....Difficulty buttons ......
-  function switchLevel(element) {
-   // $(".difficultyPoints").text(point.toString());
+
+  function changeStyleSelectedButton(element) {
+   
     $(element).addClass("btn-danger");
     
-    if(element.id === "easyLevel"){
-      $('#mediumLevel, #hardLevel').removeClass("btn-danger");
-    }else if(element.id === "mediumLevel"){
-      $('#easyLevel, #hardLevel').removeClass("btn-danger");
+    if(element.id === "easy"){
+      $('#medium, #hard').removeClass("btn-danger");
+    }else if(element.id === "medium"){
+      $('#easy, #hard').removeClass("btn-danger");
     }else{
-      $('#easyLevel, #mediumLevel').removeClass("btn-danger");
+      $('#easy, #medium').removeClass("btn-danger");
     }
   }
  
-  // sessionStorage.setItem("levels","medium")
-  // let levelStored = sessionStorage.getItem("levels");
-  //switchLevel(levelStored);
+  $("#easy").click(function () {
+    selectLevel("easy");
+  });
+
+  $("#medium").click(function () {
+    selectLevel("medium");
+  });
+
+  $("#hard").click(function () {
+    selectLevel("hard");
+  });
   
-  //if(levelStored==="medium"){$("#mediumLevel").trigger('click');}
-
-
-  $("#easyLevel").click(function () {
-    switchLevel(this);
-    $(".difficultyPoints").text("3");
-    sessionStorage.setItem("levels", "easy");
-  });
-
-  $("#mediumLevel").click(function () {
-    switchLevel(this);
-    $(".difficultyPoints").text("5");
-    sessionStorage.setItem("levels", "medium");
-  });
-
-  $("#hardLevel").click(function () {
-    switchLevel(this);
-    $(".difficultyPoints").text("9");
-    sessionStorage.setItem("levels", "hard");
-  });
+  function selectLevel(level){
+    changeStyleSelectedButton($("#" + level)[0]);
+    $(".difficultyPoints").text(points[level]);
+    sessionStorage.setItem("selectedLevel", level);
+  }
 });
