@@ -1,17 +1,7 @@
 $(document).ready(function () {
-  // Switch the button's text in  menu.html
-  let difficultyBtn = "#menuPageDifficulty";
-  let levels = ["EASY", "MEDIUM", "HARD"];
+  
+  
 
-  let j = 0;
-  let buttonLevel = $(difficultyBtn).click(function () {
-    j++;
-    $(difficultyBtn).text(levels[j]);
-    if (j === levels.length) {
-      j=0;
-      $(difficultyBtn).text(levels[j]);
-    } 
-   });
 
   //...... PC random choice;
   let powers = ["rock", "paper", "scissors"];
@@ -72,9 +62,9 @@ $(document).ready(function () {
     // return btn_id;
   });
 
-  if (buttonLevel === "EASY") {
-    $("#easyLevel").click();
-  }
+  // if (buttonLevel === "EASY") {
+  //   $("#easyLevel").click();
+  // }
 
   // Trigger for the functions:
   // -displayJokenpoMessage();
@@ -169,7 +159,7 @@ $(document).ready(function () {
       let print = $("#humanPoints").text(humanPoints2);
 
       if (humanPoints2 === parseInt($(".difficultyPoints").text()[0])) {
-        console.log("END OF THE GAME, Human won!");
+        // console.log("END OF THE GAME, Human won!");
         $("#trasparentDiv").css({ display: "block" });
         $("#winnerMessage").text("HUMAN WON");
       }
@@ -178,7 +168,7 @@ $(document).ready(function () {
       let print = $("#robotPoints").text(robotPoints2);
 
       if (robotPoints2 === parseInt($(".difficultyPoints").text()[0])) {
-        console.log("END OF THE GAME, Robot won!");
+        // console.log("END OF THE GAME, Robot won!");
         $("#trasparentDiv").css({ display: "block" });
         $("#winnerMessage").text("ROBOT WON");
       }
@@ -189,8 +179,8 @@ $(document).ready(function () {
   }
 
   // .....Difficulty buttons ......
-  function switchLevel(element, point) {
-    $(".difficultyPoints").text(point.toString());
+  function switchLevel(element) {
+   // $(".difficultyPoints").text(point.toString());
     $(element).addClass("btn-danger");
     
     if(element.id === "easyLevel"){
@@ -201,19 +191,29 @@ $(document).ready(function () {
       $('#easyLevel, #mediumLevel').removeClass("btn-danger");
     }
   }
+ 
+  // sessionStorage.setItem("levels","medium")
+  // let levelStored = sessionStorage.getItem("levels");
+  //switchLevel(levelStored);
+  
+  //if(levelStored==="medium"){$("#mediumLevel").trigger('click');}
+
 
   $("#easyLevel").click(function () {
-    switchLevel(this, 3);
-    localStorage.setItem("levels", "easy");
+    switchLevel(this);
+    $(".difficultyPoints").text("3");
+    sessionStorage.setItem("levels", "easy");
   });
 
   $("#mediumLevel").click(function () {
-    switchLevel(this, 5);
-    localStorage.setItem("levels", "medium");
+    switchLevel(this);
+    $(".difficultyPoints").text("5");
+    sessionStorage.setItem("levels", "medium");
   });
 
   $("#hardLevel").click(function () {
-    switchLevel(this, 9);
-    localStorage.setItem("levels", "hard");
+    switchLevel(this);
+    $(".difficultyPoints").text("9");
+    sessionStorage.setItem("levels", "hard");
   });
 });
