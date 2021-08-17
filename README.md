@@ -184,17 +184,29 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ## CREDITS: 
 ---
-#### Code:
+#### Code and References:
     
-   1. README: 
+    1. README: 
       - [Code-Institute-Solutions/SampleREADME](https://github.com/Code-Institute-Solutions/SampleREADME)
       - [Code-Institute-Solutions/readme-template](https://github.com/Code-Institute-Solutions/readme-template)
 
       All this README.md file used the above references to be created before, during, and after coding.
 
-   2. CENTRALIZING DIV RESPONSIVILY:
+    2. CENTRALIZING DIV RESPONSIVILY:
       -[StackOverflow](https://stackoverflow.com/questions/12645366/css-responsive-center-div)
       Author:-[Steve Glick](https://stackoverflow.com/users/1618141/steve-glick)
+
+    3. ACCESSIBILITY CONCEPTS:
+      -[AccesComputing](https://www.washington.edu/accesscomputing/30-web-accessibility-tips)
+
+    4. GETTING VALUE FROM THE SESSION STORAGE
+      -[StackOverflow](https://stackoverflow.com/questions/63300478/how-to-get-value-from-session-storage)
+      Author:-[Mike S.](https://stackoverflow.com/users/13258211/mike-s)
+
+    5. HTML VALIDATOR'S SOLUTION:
+      Button nested to a linke html's element.
+      -[StackOverflow](https://stackoverflow.com/questions/6393827/can-i-nest-a-button-element-inside-an-a-using-html5)
+      Author:-[LaserCat](https://stackoverflow.com/users/3135293/lasercat)
 
 ### Content
 
