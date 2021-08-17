@@ -1,11 +1,19 @@
+const humanTagImgId = $("#humanPowerImage");
+const robotTagImgId = $("#robotPowerImage");
+const vsTagImgId = $("#versusImg");
+const jokenpoTagDivId = $("#jokenpo");
+const messageResultHumanDiv = $("#battleResultHumanPoint");
+const messageResultRobotDiv = $("#battleResultRobotPoint");
+const plusOneStr = "+1 POINT";
+
+let humanChoice;
+let robotChoice;
+
 const points = {
   easy: 3,
   medium: 5,
   hard: 9
-}
-
-const humanTagImgId = $("#humanPowerImage");
-const robotTagImgId = $("#robotPowerImage");
+};
 
 const availableChoices = {
   rock: "rock",
@@ -13,25 +21,17 @@ const availableChoices = {
   scissors: "scissors"
 };
 
-const imagesPath = [
-  "assets/images/rocks/rock_3.jpg",
-  "assets/images/papers/paper_5.jpg",
-  "assets/images/scissors/scissor_5.png",
-];
-
-let humanChoice;
-let robotChoice;
-
 const winners = {
   tied: "TIED BATTLE",
   human: "HUMAN WON",
   robot: "ROBOT WON"
 };
 
-const plusOneStr = "+1 POINT";
-
-const messageResultHumanDiv = $("#battleResultHumanPoint");
-const messageResultRobotDiv = $("#battleResultRobotPoint");
+const imagesPath = [
+  "assets/images/rocks/rock_3.jpg",
+  "assets/images/papers/paper_5.jpg",
+  "assets/images/scissors/scissor_5.png",
+];
 
 $(".power").click(function getId() {
   humanChoice = this.id;
@@ -75,23 +75,22 @@ function isTied(robotChoice, humanChoice) {
   } else {
     return false;
   }
-  
 }
 
 let displayJokenpoChoices = () => {
-  $("#jokenpo").css({
+  $(jokenpoTagDivId).css({
     display: "block"
   });
   $(humanTagImgId).css("display", "block");
   $(robotTagImgId).css("display", "block");
-  $("#versusImg").css("display", "block");
+  $(vsTagImgId).css("display", "block");
   setTimeout(function () {
-    $("#jokenpo").css({
+    $(jokenpoTagDivId).css({
       display: "none"
     });
     $(humanTagImgId).css("display", "none");
     $(robotTagImgId).css("display", "none");
-    $("#versusImg").css("display", "none");
+    $(vsTagImgId).css("display", "none");
   }, 2500);
 
   setTimeout(() => {
@@ -120,7 +119,6 @@ function increasePoint(winner) {
 
 function checkEndGame(totalPoints, player) {
   let level = sessionStorage.getItem('selectedLevel');
-
   if (totalPoints === parseInt(points[level])) {
     $("#trasparentDiv").css({
       display: "block"
@@ -131,27 +129,29 @@ function checkEndGame(totalPoints, player) {
 
 function checkWinner(robotChoice, humanChoice) {
   switch (robotChoice) {
-    case availableChoices.rock: 
-      if (humanChoice === "paper") {
+    case availableChoices.rock:
+      if (humanChoice === availableChoices.paper) {
         messageResultHumanDiv.text(plusOneStr);
         return winners.human;
       } else {
         messageResultRobotDiv.text(plusOneStr);
         return winners.robot;
       }
+      break;
 
-    case availableChoices.paper: 
-      if (humanChoice === "scissors") {
+    case availableChoices.paper:
+      if (humanChoice === availableChoices.scissors) {
         messageResultHumanDiv.text(plusOneStr);
         return winners.human;
       } else {
         messageResultRobotDiv.text(plusOneStr);
         return winners.robot;
       }
-    
+      break;
 
-    case availableChoices.scissors: 
-      if (humanChoice === "rock") {
+
+    case availableChoices.scissors:
+      if (humanChoice === availableChoices.rock) {
         messageResultHumanDiv.text(plusOneStr);
         return winners.human;
       } else {
@@ -163,9 +163,7 @@ function checkWinner(robotChoice, humanChoice) {
 }
 
 function changeStyleSelectedButton(element) {
-
   $(element).addClass("btn-danger");
-
   if (element.id === "easy") {
     $('#medium, #hard').removeClass("btn-danger");
   } else if (element.id === "medium") {
@@ -174,7 +172,6 @@ function changeStyleSelectedButton(element) {
     $('#easy, #medium').removeClass("btn-danger");
   }
 }
-
 
 function selectLevel(level) {
   changeStyleSelectedButton($("#" + level)[0]);
