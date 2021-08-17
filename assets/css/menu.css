@@ -99,13 +99,36 @@ header > a, header > a:hover{
     }
 }
 
+@media only screen and (min-height: 798px) and (max-height: 827px){
+    .container-fluid{
+        margin-bottom: 10%;
+    }
+
+    img{
+        max-width: 60%;
+        max-height: 40vh;
+    }
+
+    .btn{
+        font-size: 110%;
+        margin-bottom: 2%;
+        width:70%;
+    }
+
+    .btn-group{
+        margin-top: 8%;
+        max-width: 60%;
+        margin-left: 18%;
+    }
+}
+
 @media only screen and (max-width: 425px){
     .container-fluid{
         margin-bottom: 30%;
     }
     
     h1{
-        font-size: 210%;
+        font-size: 180%;
         padding-bottom: 6px;
         padding-top: 18px;
     }
@@ -127,3 +150,9 @@ header > a, header > a:hover{
         max-height: 70vh;
     }
 }
+
+
+
+
+
+
