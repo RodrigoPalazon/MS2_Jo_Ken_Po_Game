@@ -3,14 +3,15 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items:center;
-    align-content:center;
-    /* width: 100%;
-    height:auto; */
+    /* align-content:center; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color:  rgb(17, 17, 17);
     font-family: "Times New Roman", Times, serif;
+    height: auto;
+    position: fixed;
+    width: 100%;
 }
 
 .container-fluid{
@@ -23,15 +24,12 @@ body{
 }
 
 h1{
-    font-size: 200%;
     padding-top: 5%;
     text-shadow: 1px 1px 5px #fc7afc;
 }
 
 .btn-group{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     max-width: 60%;
     margin-left: 30%;
     margin-top: 5%;
@@ -42,33 +40,49 @@ h1{
     width:50%;
 }
 
-/*.... Images ....*/
+/*.... IMAGES ....*/
 img{
     max-width: 60%;
     max-height: 50vh;
     box-shadow: 5px 5px 10px rgb(179, 126, 248);
 }
 
-/*.... Links .....*/
-header > a{
-    text-decoration: none;
+/*.... LINKS .....*/
+header > a, header > a:hover{
     color: white;
+    text-decoration: none;
 }
 
-header > a:hover{
-    text-decoration: none;
-    color: white;
-}
-
-
-
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1200px){
     .container-fluid{
         margin-bottom: 20%;
     }
 
     h1{
-        font-size: 400%;
+        font-size: 300%;
+        padding-bottom: 6px;
+    }
+
+    .btn-group{
+        margin-top: 15%;
+        max-width: 80%;
+        margin-left: 40%;
+    }
+    
+    .btn{
+        font-size: 170%;
+        font-weight: bold;
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container-fluid{
+        margin-bottom: 15%;
+    }
+
+    h1{
+        font-size: 300%;
         padding-bottom: 6px;
     }
 
