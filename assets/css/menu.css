@@ -40,6 +40,10 @@ h1{
     width:50%;
 }
 
+.btn-success{
+    border: solid 2px white;
+}
+
 /*.... IMAGES ....*/
 img{
     max-width: 60%;
@@ -54,29 +58,6 @@ header > a, header > a:hover{
 }
 
 @media only screen and (max-width: 1200px){
-    .container-fluid{
-        margin-bottom: 20%;
-    }
-
-    h1{
-        font-size: 300%;
-        padding-bottom: 6px;
-    }
-
-    .btn-group{
-        margin-top: 15%;
-        max-width: 80%;
-        margin-left: 40%;
-    }
-    
-    .btn{
-        font-size: 170%;
-        font-weight: bold;
-        margin-bottom: 2%;
-    }
-}
-
-@media only screen and (max-width: 768px){
     .container-fluid{
         margin-bottom: 15%;
     }
@@ -99,32 +80,32 @@ header > a, header > a:hover{
     }
 }
 
-/* @media only screen and (min-height: 798px) and (max-height: 827px){
+@media only screen and (max-width: 768px){
     .container-fluid{
         margin-bottom: 10%;
     }
 
-    img{
-        max-width: 60%;
-        max-height: 40vh;
-    }
-
-    .btn{
-        font-size: 110%;
-        margin-bottom: 2%;
-        width:70%;
+    h1{
+        font-size: 300%;
+        padding-bottom: 6px;
     }
 
     .btn-group{
-        margin-top: 8%;
-        max-width: 60%;
-        margin-left: 18%;
+        margin-top: 10%;
+        max-width: 80%;
+        margin-left: 40%;
     }
-} */
+    
+    .btn{
+        font-size: 170%;
+        font-weight: bold;
+        margin-bottom: 2%;
+    }
+}
 
 @media only screen and (max-width: 425px){
     .container-fluid{
-        margin-bottom: 20%;
+        margin-bottom: 10%;
     }
     
     h1{
@@ -140,7 +121,7 @@ header > a, header > a:hover{
     }
 
     .btn-group{
-        margin-top: 20%;
+        margin-top: 10%;
         max-width: 60%;
         margin-left: 12.5%;
     }

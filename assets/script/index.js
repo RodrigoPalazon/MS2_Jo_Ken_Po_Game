@@ -22,7 +22,7 @@ const availableChoices = {
 };
 
 const winners = {
-  tied: "TIED BATTLE",
+  tied: "TIED",
   human: "HUMAN WON",
   robot: "ROBOT WON"
 };
@@ -72,9 +72,8 @@ function isTied(robotChoice, humanChoice) {
     messageResultHumanDiv.html(winners.tied);
     messageResultRobotDiv.html(winners.tied);
     return true;
-  } else {
+  } 
     return false;
-  }
 }
 
 let displayJokenpoChoices = () => {
@@ -117,6 +116,14 @@ function increasePoint(winner) {
   }
 }
 
+
+/**
+ * Checks if game is finished
+ * 
+ * @param {Number} totalPoints - The total points
+ * @param {String} player - The selected choice
+ * @return {Null} null 
+ */
 function checkEndGame(totalPoints, player) {
   let level = sessionStorage.getItem('selectedLevel');
   if (totalPoints === parseInt(points[level])) {
@@ -158,7 +165,7 @@ function checkWinner(robotChoice, humanChoice) {
         messageResultRobotDiv.text(plusOneStr);
         return winners.robot;
       }
-
+      break;
   }
 }
 

@@ -11,19 +11,23 @@ html, body{
     font-family: "Times New Roman", Times, serif;
 }
 
-/*.. CONTAINERS ...*/
+/*.. CONTAINERS ..*/
 #containerRules{
-    background-color: rgb(148, 130, 223);
+    background-color: rgb(182, 164, 250);
     color: rgb(12, 12, 12);
     width: 90%;
     margin-top:5%;
     margin-bottom:5%;
-    box-shadow: 7px 7px 5px rgb(179, 126, 248);
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    box-shadow: 7px 7px 5px rgb(140, 54, 253);
 }
 
+@media only screen and (min-width: 768px){
+    #containerRules{
+        font-size: 130%;
+    }
+}
+
+/*.. STRINGS ..*/
 #containerRules ul{
     margin-left: -5%;
 }
@@ -33,10 +37,6 @@ html, body{
 }
 
 @media only screen and (min-width: 768px){
-    #containerRules{
-        font-size: 130%;
-    }
-
     #containerRules ul{
         margin-left: 0;
     }
@@ -44,17 +44,16 @@ html, body{
     #containerRules ul li{
         margin-left: 0;
     }
+}
 
+/* ....BUTTONS..*/
+.btn-success{
+    border: solid 2px white;
+}
+
+@media only screen and (min-width: 768px){
     #containerRules .btn{
         font-size: 130%;
         margin-top: 5%;
     }
-}
-
-
-
-/* ....BUTTONS..*/
-
-.btn-success{
-    border: solid 2px white;
 }
