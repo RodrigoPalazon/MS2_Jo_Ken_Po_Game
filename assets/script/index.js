@@ -27,6 +27,11 @@ const winners = {
   robot: "ROBOT WON"
 };
 
+const pointsMade = [
+  "#humanPoints",
+  "#robotPoints"
+]
+
 const imagesPath = [
   "assets/images/rocks/rock_3.jpg",
   "assets/images/papers/paper_5.jpg",
@@ -34,6 +39,7 @@ const imagesPath = [
 ];
 
 $(".power").click(function getId() {
+  $(".power").attr("disabled", true);
   humanChoice = this.id;
   let choices = Object.values(availableChoices);
   robotChoice = choices[Math.floor(Math.random() * 3)];
@@ -55,7 +61,6 @@ $(".power").click(function getId() {
     robotTagImgId.attr("src", imagesPath[2]);
   }
   play();
-
 });
 
 function play() {
@@ -90,6 +95,7 @@ let displayJokenpoChoices = () => {
     $(humanTagImgId).css("display", "none");
     $(robotTagImgId).css("display", "none");
     $(vsTagImgId).css("display", "none");
+    $(".power").attr("disabled", false);
   }, 2500);
 
   setTimeout(() => {
@@ -127,10 +133,12 @@ function increasePoint(winner) {
 function checkEndGame(totalPoints, player) {
   let level = sessionStorage.getItem('selectedLevel');
   if (totalPoints === parseInt(points[level])) {
-    $("#trasparentDiv").css({
-      display: "block"
-    });
-    $("#winnerMessage").text(player);
+    setTimeout(() => {
+      $("#trasparentDiv").css({
+        display: "block"
+      });
+      $("#winnerMessage").text(player);
+    }, 2000);
   }
 }
 
@@ -181,6 +189,8 @@ function changeStyleSelectedButton(element) {
 }
 
 function selectLevel(level) {
+  $(pointsMade[0]).text(0);
+  $(pointsMade[1]).text(0);
   changeStyleSelectedButton($("#" + level)[0]);
   $(".difficultyPoints").text(points[level]);
   sessionStorage.setItem("selectedLevel", level);

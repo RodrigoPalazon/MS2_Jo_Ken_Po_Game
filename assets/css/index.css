@@ -200,6 +200,7 @@ main {
 
 .buttonsGroup button {
     font-size: 1.3em;
+    margin-left: .2%
 }
 
 .btn-group .btn {
