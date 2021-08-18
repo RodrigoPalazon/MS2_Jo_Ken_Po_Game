@@ -10,11 +10,10 @@ body {
     font-family: "Times New Roman", Times, serif;
 }
 
-
 /* .... CONTAINER ... */
 main {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     flex-direction: column;
 }
@@ -27,20 +26,13 @@ main {
     color: white;
 }
 
-h1 {
-    padding-top: 3%;
-    text-shadow: 1px 1px 5px #fc7afc;
-}
-
 #battleFied {
-    display: flex;
-    flex-direction: column;
-    margin-top: -10%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin-top: -10%; */
     min-height: 80vh;
     box-shadow: 10px 10px 30px rgb(36, 2, 82);
 }
-
-
 
 @media only screen and (max-width: 768px) {
     #battleFied {
@@ -74,17 +66,6 @@ h1 {
     z-index: 1;
 }
 
-#trasparentDiv .btn-group {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 30%;
-}
-
-#trasparentDiv .btn {
-    width: 100%;
-}
-
 #winnerContainer {
     background-color: rgb(69, 11, 146);
 }
@@ -110,25 +91,6 @@ h1 {
     align-items: center;
 }
 
-#humanPowerImage,
-#robotPowerImage {
-    width: 10vw;
-    height: auto;
-}
-
-/* @media only screen and (max-width: 425px){
-    
-    .transparentInternalDiv{
-        width: 30vw;
-        height: 20vh;
-    }
-    
-    #humanPowerImage, #robotPowerImage{
-        width: 100%;
-        height: 100%; 
-    }   
-} */
-
 .imagesBattleContainer {
     display: flex;
     justify-content: center;
@@ -138,7 +100,7 @@ h1 {
     display: none;
     background-color: rgb(69, 11, 146);
     color: white;
-    font-size: 10vw;
+    font-size: 3vw;
     text-align: center;
     vertical-align: middle;
 }
@@ -150,7 +112,7 @@ h1 {
 }
 
 .namesOpponents {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     border-bottom: double 1px rgb(53, 4, 117);
 }
@@ -161,48 +123,46 @@ h1 {
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    height: auto;
-    border-right: double 2px rgb(157, 255, 157);
-    border-left: double 2px rgb(157, 255, 157);
-}
-
-.players p {
-    font-size: 2.5vw;
+    /* height: auto; */
+    border-right: double 4px rgb(10, 145, 10);
+    border-left: double  4px rgb(157, 255, 157);
 }
 
 .players:nth-child(2) {
     height: 100%;
 }
 
-@media only screen and (min-width: 1200px) {
+.transparentInternalDiv {
+    height: 20%;
+}
+
+@media only screen and (max-width: 1200px) {
     .players {
         max-width: 20%;
-        /* max-height: 15vh; */
-
-    }
-
-    .players p {
-        font-size: 1.5vw
     }
 
     #jokenpo {
-        font-size: 1.5vw;
-        /* margin: 10% 0; */
+        font-size: 4vw;
     }
 }
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .players {
-        min-width: 30%;
-    }
-
-    .players p {
-        font-size: 6vw;
+        min-width: 20%;
     }
 
     #jokenpo {
-        font-size: 6vw;
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .players {
+        min-width: 20%;
+    }
+
+    #jokenpo {
+        font-size: 4vw;
     }
 }
 
@@ -216,23 +176,14 @@ h1 {
     }
 }
 
-
-
-
-
-
-.namesOpponents div p {
-    background-color: green;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-#robotName {
-    margin-top: -24%;
-}
-
-
 /* ........ BUTTONS ........ */
+#trasparentDiv .btn-group {
+    /* display: flex; */
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 30%;
+}
+
 .buttonsGroup {
     display: flex;
     justify-content: center;
@@ -240,10 +191,6 @@ h1 {
 
 .buttonsGroup button {
     font-size: 1.3em;
-}
-
-.clicked {
-    color: red;
 }
 
 .btn-group .btn {
@@ -263,18 +210,11 @@ h1 {
 
 @media only screen and (max-width: 768px) {
     .btn-group .btn {
-        /* border: solid 2px red; */
         font-size: 3vw;
-        /* font-weight: bold; */
     }
 
-    /* .buttonsGroup{
-        display: flex;
-        justify-content: space-around;
-    } */
-
     .buttonsGroup button {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 }
 
@@ -282,8 +222,6 @@ h1 {
     .btn-group .btn {
         border: solid 2px red;
         font-size: 5.1vw;
-        /* font-weight: bold; */
-        /* background-color: white; */
     }
 
     .buttonsGroup button {
@@ -293,11 +231,28 @@ h1 {
     .players p {
         font-size: 6vw;
     }
+
+    #trasparentDiv .btn {
+        margin-top: 8%;
+    }
 }
 
+/*.... STRINGS  .....*/
+h1 {
+    padding-top: 3%;
+    text-shadow: 1px 1px 5px #fc7afc;
+}
 
+.namesOpponents div p {
+    background-color: green;
+    text-align: center;
+    font-size: 2.5vw;
+}
 
-/*.... INCREASE POINT  .....*/
+#robotName {
+    margin-top: -24%;
+}
+
 .points {
     display: flex;
     justify-content: space-between;
@@ -311,166 +266,50 @@ h1 {
 
 .placar {
     color: green;
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
     font-weight: bold;
     margin: 2% 2.5%;
 }
 
-@media only screen and (max-width: 425px) {
-
-    #humanPoints,
-    #robotPoints {
-        font-size: 6.5vw;
-    }
-
-    .placar {
-        font-size: 3.5vw;
-    }
-
-    #trasparentDiv .btn {
-        margin-top: 5%;
-    }
-
-    .plusOnePoint {
-        font-size: .5vw;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-
-    #humanPoints,
-    #robotPoints {
-        font-size: 6.5vw;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-
-    #humanPoints,
-    #robotPoints {
-        font-size: 3.5vw;
-    }
-}
-
-.pointsMade {
-    font-size: 4.5vw;
-}
-
-/*.... Links .....*/
-header>a,
-button>a {
-    text-decoration: none;
-    color: white;
-}
-
-header>a:hover,
-button>a:hover {
-    text-decoration: none;
-    color: white;
-}
-
-/* ..... Images ....*/
-#versusImg {
-    width: 80%;
-    min-width: 40px;
-    display: none;
-}
-
-img .col-3 {
-    max-height: .2em;
-}
-
-.transparentInternalDiv {
-    height: 20%;
-}
-
-/* @media only screen and (max-width: 1200px){
-    #humanPowerImage, #robotPowerImage {
-        width: 60%;
-    }
-} */
-@media only screen and (max-width: 1200px) {
-
-    #humanPowerImage,
-    #robotPowerImage {
-        width: 100%;
-        height: 18vh;
-    }
-
-    #versusImg {
-        min-width: 150%;
-        height: 8vh;
-    }
-}
-
-
-@media only screen and (max-width: 768px) {
-
-    #humanPowerImage,
-    #robotPowerImage {
-        width: 100%;
-        height: 18vh;
-    }
-
-    #versusImg {
-        min-width: 150%;
-        height: 8vh;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    #versusImg {
-        min-width: 200%;
-        height: 10vh;
-    }
-
-    .placar {
-        font-size: 3.5vw;
-    }
-
-    .plusOnePoint {
-        color: red;
-        font-weight: bold;
-        font-size: 3.0vw;
-    }
-
-    #humanPowerImage,
-    #robotPowerImage {
-        width: 100%;
-        height: 20vh;
-    }
-}
-
-/* @media only screen and (min-width: 1200px){
-    #humanImage{
-        width: 5vw;
-        height: auto;
-    }
-    
-    #robotImage{
-        width: 7vw;
-        height: auto;
-    }
+/* .pointsMade {
+    font-size: 5.5vw;
 } */
 
-
-
-
-
-/* Headings, texts */
 #winnerContainer h3 {
     text-shadow: 2px 2px 10px #fc7afc;
 }
 
 .difficultyPoints {
-    font-size: 2.5vw;
+    font-size: 3vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    #humanPoints,
+    #robotPoints {
+        font-size: 4.5vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #humanPoints,
+    #robotPoints {
+        font-size: 5.5vw;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .namesOpponents div p {
+        font-size: 3.5vw;
+    }
 
     #battleResultHumanPoint,
     #battleResultRobotPoint {
         font-size: 3vw;
+    }
+
+    #humanPoints,
+    #robotPoints {
+        font-size: 6.5vw;
     }
 
     .difficultyPoints {
@@ -479,13 +318,109 @@ img .col-3 {
 }
 
 @media only screen and (max-width: 425px) {
+    .namesOpponents div p {
+        font-size: 5vw;
+    }
 
     #battleResultHumanPoint,
-    #battleResultRobotPoint {
+    #battleResultRobotPoint,
+    .difficultyPoints {
         font-size: 3vw;
     }
 
+    #humanPoints,
+    #robotPoints {
+        font-size: 8.5vw;
+    }
+
     .difficultyPoints {
-        font-size: 3.5vw;
+        font-size: 5vw;
+    }
+}
+
+
+/*.... LINKS .....*/
+header>a,
+header>a:hover,
+button>a,
+button>a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* ..... IMAGES ....*/
+#humanPowerImage,
+#robotPowerImage {
+    width: 12vw;
+    height: auto;
+}
+
+#versusImg {
+    width: 80%;
+    min-width: 4vw;
+    display: none;
+}
+
+.players img {
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    #humanPowerImage,
+    #robotPowerImage {
+        width: 12vw;
+        height: auto;
+    }
+
+    #versusImg {
+        width: 80%;
+        min-width: 4vw;
+        /* display: none; */
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #humanPowerImage,
+    #robotPowerImage {
+        width: 20vw;
+        height: auto;
+    }
+
+    #versusImg {
+        width: 100%;
+        min-width: 6vw;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #humanPowerImage,
+    #robotPowerImage {
+        width: 20vw;
+        height: auto;
+    }
+
+    #versusImg {
+        width: 100%;
+        min-width: 6vw;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    #humanPowerImage,
+    #robotPowerImage {
+        width: 30vw;
+        height: auto;
+    }
+
+    #versusImg {
+        width: 130%;
+        min-width: 15vw;
+        display: none;
     }
 }

@@ -10,7 +10,7 @@ body{
     background-color:  rgb(17, 17, 17);
     font-family: "Times New Roman", Times, serif;
     height: auto;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
 }
 
@@ -32,7 +32,7 @@ h1{
     flex-direction: column;
     max-width: 60%;
     margin-left: 30%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .btn{
@@ -99,7 +99,7 @@ header > a, header > a:hover{
     }
 }
 
-@media only screen and (min-height: 798px) and (max-height: 827px){
+/* @media only screen and (min-height: 798px) and (max-height: 827px){
     .container-fluid{
         margin-bottom: 10%;
     }
@@ -120,11 +120,11 @@ header > a, header > a:hover{
         max-width: 60%;
         margin-left: 18%;
     }
-}
+} */
 
 @media only screen and (max-width: 425px){
     .container-fluid{
-        margin-bottom: 30%;
+        margin-bottom: 20%;
     }
     
     h1{
@@ -140,7 +140,7 @@ header > a, header > a:hover{
     }
 
     .btn-group{
-        margin-top: 25%;
+        margin-top: 20%;
         max-width: 60%;
         margin-left: 12.5%;
     }
