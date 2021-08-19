@@ -1,16 +1,5 @@
 @import url("index.css");
 
-html, body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    overflow-x: hidden; 
-    background-color:  rgb(255, 200, 168);
-    font-family: "Times New Roman", Times, serif;
-}
-
 /*.. CONTAINERS ..*/
 #containerRules{
     background-color: rgb(182, 164, 250);
@@ -19,30 +8,25 @@ html, body{
     margin-top:5%;
     margin-bottom:5%;
     box-shadow: 7px 7px 5px rgb(140, 54, 253);
+    font-size: 1.2em;
 }
 
-@media only screen and (min-width: 768px){
-    #containerRules{
-        font-size: 130%;
-    }
+#containerRules .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /*.. STRINGS ..*/
-#containerRules ul{
-    margin-left: -5%;
-}
-
-#containerRules ul li{
-    margin-left: -5%;
-}
-
-@media only screen and (min-width: 768px){
-    #containerRules ul{
-        margin-left: 0;
+@media only screen and (max-width: 768px){
+    #containerRules ul, #containerRules ul li{
+        margin-left: -1%;
     }
-    
-    #containerRules ul li{
-        margin-left: 0;
+}
+
+@media only screen and (max-width: 425px){
+    #containerRules ul, #containerRules ul li{
+        margin-left: -3%;
     }
 }
 
