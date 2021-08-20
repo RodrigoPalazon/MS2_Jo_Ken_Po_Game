@@ -30,7 +30,7 @@ const winners = {
 const pointsMade = [
   "#humanPoints",
   "#robotPoints"
-]
+];
 
 const imagesPath = [
   "assets/images/rocks/rock_3.jpg",
@@ -131,7 +131,7 @@ function increasePoint(winner) {
  * @return {Null} null 
  */
 function checkEndGame(totalPoints, player) {
-  let level = sessionStorage.getItem('selectedLevel');
+  let level = sessionStorage.getItem("selectedLevel");
   if (totalPoints === parseInt(points[level])) {
     setTimeout(() => {
       $("#trasparentDiv").css({
@@ -180,11 +180,11 @@ function checkWinner(robotChoice, humanChoice) {
 function changeStyleSelectedButton(element) {
   $(element).addClass("btn-danger");
   if (element.id === "easy") {
-    $('#medium, #hard').removeClass("btn-danger");
+    $("#medium, #hard").removeClass("btn-danger");
   } else if (element.id === "medium") {
-    $('#easy, #hard').removeClass("btn-danger");
+    $("#easy, #hard").removeClass("btn-danger");
   } else {
-    $('#easy, #medium').removeClass("btn-danger");
+    $("#easy, #medium").removeClass("btn-danger");
   }
 }
 

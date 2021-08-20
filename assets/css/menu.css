@@ -3,14 +3,12 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items:center;
-    /* align-content:center; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color:  rgb(17, 17, 17);
     font-family: "Times New Roman", Times, serif;
     height: auto;
-    /* position: fixed; */
     width: 100%;
 }
 
@@ -28,6 +26,7 @@ h1{
     text-shadow: 1px 1px 5px #fc7afc;
 }
 
+/* BUTTONS */
 .btn-group{
     flex-direction: column;
     max-width: 60%;

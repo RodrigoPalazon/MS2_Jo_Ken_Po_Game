@@ -2,7 +2,7 @@
 
 [View the live project here.](https://rodrigopalazon.github.io/MS2_Jo_Ken_Po_Game/)
 
-This is a Battle Game, that the player fights againts the computer chosing between three "Powers". It is designed to be responsive and interactive.
+This is a Battle Game, that the player fights against the computer chosing between three "Powers". It is designed to be responsive and interactive.
 
 <h2 align="center"><img src="assets/images/readme/responsivity.png"></h2>
 
@@ -28,9 +28,9 @@ This is a Battle Game, that the player fights againts the computer chosing betwe
         
    -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used are Code Insititue darkblue, and white.
+        -   The two main colors used are Code Institute dark blue, and white.
     -   #### Typography
-        -   The Times New Roman font is the main font used throughout the whole website with Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. 
+        -   The Times New Roman font is the main font used throughout the whole website with Serif as the fallback font in the case for any reason the font isn't being imported into the site correctly. 
     -   #### Imagery
         -   Imagery is important. The character images help the user identifying which one he's playing with.
 The powers' images reinforce the user's choice making the result easily understandable.
@@ -62,9 +62,9 @@ The powers' images reinforce the user's choice making the result easily understa
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git.
+    - GitHub is used to store the project's code after being pushed from Git.
 1. [Gimp:](https://www.gimp.org/)
-    - Gimp was used to create the logo, resizing images and editing photos for the website.
+    - Gimp was used to create the logo, resizing images, and editing photos for the website.
 1. [Figma:](https://balsamiq.com/)
     - Figma was used to create the [wireframe](https://www.figma.com/file/hgVfsd9I89RFnBdP1VfAsN/MS2---Jo-Ken-Po?node-id=0%3A1) during the design process.
 
@@ -81,19 +81,18 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C CSS Validator - rules.css](assets/images/readme/cssValidator_rules.png)
 
 
-<!-- missing JavaScript validation -->
+-   [JSHINT JS Validator - menu.js, and index.js] - Used JSHint plugin in Visual Studio Code IDE.
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
 
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more its content.
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about its content.
 
         1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice.
-        <!-- 2. The main points are made immediately with the hero image -->
-        2. The user has three options, click the "PLAY" button to start the game, click on "EASY" button switch button's value though "EASY", "MEDIUM", "HARD", or clicking on "Rules" to learn more about the JO_KEN_PO Battle.
+        2. The user has three options, click the "PLAY" button to start the game, click on the "EASY" button switch button's value through "EASY", "MEDIUM", "HARD", or clicking on "Rules" to learn more about the JO_KEN_PO Battle.
 
     2. As a First Time Visitor, I want to easily navigate throughout the site to find content.
-        1. The site(game) has been designed to be fluid and never to entrap the user. At the top of each page there is a bar with a clickable logo that always brings the user to the entrance page.
+        1. The site(game) has been designed to be fluid and never to entrap the user. At the top of each page, there is a bar with a clickable logo that always brings the user to the entrance page.
         2. At the game's main page, beneath the top bar, there are 3 buttons that the user can switch the level, making the number of rounds increasing or decreasing.
         3. Besides the levels' buttons, there is a "Rules" button, that displays an explanation of how the game works.
 
@@ -101,37 +100,35 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         1. The site(game) has been designed to be fluid and with clickable elements and their functionalities easily understandable.
     
     4. As a First Time Visitor, I want to easily understand how the game works or by being an obvious game or by receiving some instructions at the beginning.
-        1. The site(game) has been designed that the user can independently in which page, section, or moment of the game, to access the "Rules" page with just one click.
-        2. The site(game) has been designed that the user can independently in which page, section, or moment of the game, to access the JO_KEN_PO Battle page with just one click.
+        1. The site(game) has been designed that the user can independently in which page, section, or moment of the game, access the "Rules" page with just one click.
+        2. The site(game) has been designed that the user can independently in which page, section, or moment of the game, access the JO_KEN_PO Battle page with just one click.
 
 -   #### Returning Visitor Goals
 
     1. As a Returning Visitor, I want to find everything working as expected.
-        1. I would not like to find any error our fail if no relevant improvement was made.
+        1. I would not like to find any error or fail if no relevant improvement was made.
         2. Even with a more modern design, I want to be able to play the game without any difficulty.
     
     2. As a Returning Visitor, I want to find a more modern and improved design.
-        1. Returning to the site(game), after few months, I want to recognize at least few improvements, for example, a more modern button design, image, and/or fonts.
+        1. Returning to the site(game), after few months, I want to recognize at least a few improvements, for example, a more modern button design, image, and/or fonts.
 
 -   #### Frequent User Goals
     1. As a Frequent User, I want to check if there are any newly added features in the game.
         1. It can be a different rule, or a different character that I can play with, or a different "power" that I can use against the computer.
         2. It can be a different level of difficulty, or the option the choose some scenarios as a background.
 
-    2. As a Frequent User, I want to check if there are any new way to make points and interact with the game.
-        1. It can be by accumulating points, or to have a opportunite to use a special power.
+    2. As a Frequent User, I want to check if there are any new ways to make points and interact with the game.
+        1. It can be by accumulating points, or to have an opportunity to use a special power.
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Large Screens, Laptop, iPhone7, iPhone 8 & iPhoneX.
+-   The Website was tested on Google Chrome, Microsoft Edge, and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Large Screens, Laptop, iPhone7, iPhone 8 & iPhone X.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 ### Known Bugs
 
--  When the page index.html is loaded, it brings up an error by some "src" not being found, it happens because the "src" values are created dynamically by the JavaScript when the user does your first choice against the computer.
-    <!-- -   A white gap can be seen to the right of the footer and navigation bar as a result.
--   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them. -->
+- For some devices, mainly mobiles, the images of rock, paper, and scissors can appear a bit disproportionate comparing to the rest of the page.
 
 ## Deployment
 
@@ -140,8 +137,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 The project was deployed to GitHub Pages using the following steps...
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/RodrigoPalazon/MS2_Jo_Ken_Po_Game)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+2. At the top of the Repository (not the top of the page), locate the "Settings" button on the menu.
+    - Alternatively, click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Main Branch".
 5. The page will automatically refresh.
@@ -152,7 +149,7 @@ The project was deployed to GitHub Pages using the following steps...
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/RodrigoPalazon/MS2_Jo_Ken_Po_Game)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+2. At the top of the Repository (not top of page) just above the "Settings" button on the menu, locate the "Fork" button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
