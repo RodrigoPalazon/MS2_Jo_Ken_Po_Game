@@ -142,7 +142,7 @@ The project was deployed to GitHub Pages using the following steps...
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Main Branch".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://rodrigopalazon.github.io/MS2_Jo_Ken_Po_Game/) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link](https://rodrigopalazon.github.io/MS2_Jo_Ken_Po_Game/menu.html) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
