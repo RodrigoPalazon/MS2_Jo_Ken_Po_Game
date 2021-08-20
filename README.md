@@ -1,6 +1,6 @@
 # MS2_Jo_Ken_Po_Game
 
-[View the live project here.](https://rodrigopalazon.github.io/MS2_Jo_Ken_Po_Game/)
+[View the live project here.](https://rodrigopalazon.github.io/MS2_Jo_Ken_Po_Game/menu.html)
 
 This is a Battle Game, that the player fights against the computer chosing between three "Powers". It is designed to be responsive and interactive.
 
