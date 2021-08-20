@@ -205,6 +205,10 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
       -[StackOverflow](https://stackoverflow.com/questions/6393827/can-i-nest-a-button-element-inside-an-a-using-html5)
       Author:-[LaserCat](https://stackoverflow.com/users/3135293/lasercat)
 
+    6. JAVASCRIPT DOCSTRING:
+       -[VisualStudio](https://marketplace.visualstudio.com/items?itemName=Massi.javascript-docstrings)
+       -[WordPress](https://make.wordpress.org/core/handbook/best-practices/inline-documentation-standards/javascript/)
+
 ### Content
 
 -   All content was written by [Rodrigo Palazon](https://github.com/RodrigoPalazon).
